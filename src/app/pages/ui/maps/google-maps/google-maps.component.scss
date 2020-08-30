@@ -1,0 +1,18 @@
+@import '~src/assets/sass/variables';
+
+:host {
+	height: 100%;
+	display: flex;
+	flex: 1;
+	overflow: auto;
+	min-height: $module-rem * 30;
+
+	agm-map {
+		display: block;
+		min-height: 100%;
+		width: 100%;
+	}
+	::ng-deep .agm-map-container-inner {
+		min-height: inherit;
+	}
+}

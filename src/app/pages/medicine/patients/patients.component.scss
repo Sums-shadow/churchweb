@@ -1,0 +1,15 @@
+@import '~src/assets/sass/variables';
+
+:host {
+  .address-col {
+    min-width: 130px;
+  }
+  .actions {
+    display: flex;
+    margin: -$module-rem / 4;
+
+    .tc-btn {
+      margin: $module-rem / 4;
+    }
+  }
+}

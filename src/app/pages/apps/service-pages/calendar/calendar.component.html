@@ -1,0 +1,34 @@
+<div>
+  <full-calendar
+    #calendar
+    [plugins]="calendarPlugins"
+    [header]="headerOptions"
+    [events]="calendarEvents"
+    (eventClick)="eventClick($event)"
+  ></full-calendar>
+</div>
+
+<!-- Modal window -->
+<ng-container>
+  <ng-template #modalBody>
+    <h4 [tcColor]="eventBody.color ? eventBody.color : '#336cfb'" class="mt-0">{{ eventBody.title }}</h4>
+
+    <div><strong>Event time</strong></div>
+    <p><i>From:</i> {{ eventBody.from }} - <i>to:</i> {{ eventBody.to }}</p>
+
+    <ng-container *ngIf="eventBody.desc">
+      <div><strong>Event description</strong></div>
+      <p>{{ eventBody.desc }}</p>
+    </ng-container>
+  </ng-template>
+
+  <ng-template #modalFooter>
+    <div class="actions justify-content-between">
+      <button tc-button [type]="'button'" [view]="'error'" (click)="closeModal()">Close</button>
+      <button tc-button [view]="'info'">
+        Change event
+      </button>
+    </div>
+  </ng-template>
+</ng-container>
+<!-- end Modal window -->

@@ -1,0 +1,23 @@
+{
+  "img": "assets/content/doctor-400-1.jpg",
+  "name": "Sophie",
+  "lastName": "Mackins",
+  "gender": "female",
+  "role": "Gynecologist",
+  "address": "795 Folsom Ave, Suite 600 San Francisco, CADGE 94107",
+  "profileLink": "doctor-profile",
+  "social": [
+    {
+      "icon": "icofont-instagram",
+      "link": "#"
+    },
+    {
+      "icon": "icofont-facebook",
+      "link": "#"
+    },
+    {
+      "icon": "icofont-twitter",
+      "link": "#"
+    }
+  ]
+}

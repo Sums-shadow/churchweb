@@ -1,0 +1,186 @@
+<tc-card [title]="'Inputs'">
+  <div class="row">
+    <div class="col-12 col-md-6">
+      <tc-form-group>
+        <tc-input [value]="'Value'"></tc-input>
+      </tc-form-group>
+    </div>
+
+    <div class="col-12 col-md-6">
+      <tc-form-group>
+        <tc-input [prefixIcon]="'icofont-pills'" [placeholder]="'Placeholder'" [tcShape]="6"></tc-input>
+      </tc-form-group>
+    </div>
+  </div>
+
+  <tc-alert [beforeIcon]="'icofont-info-circle'" [view]="'warning'">
+    You can find more information about this component on <a href="#" routerLink="../inputs">this page</a>.
+  </tc-alert>
+</tc-card>
+
+<tc-card [title]="'Textareas'">
+  <div class="row">
+    <div class="col-12 col-md-6">
+      <tc-form-group>
+        <tc-textarea [value]="'Value'"></tc-textarea>
+      </tc-form-group>
+    </div>
+
+    <div class="col-12 col-md-6">
+      <tc-form-group>
+        <tc-textarea
+          [placeholder]="'Placeholder'"
+          [charLimiter]="{ counter: 200, before: 'Before text', after: 'after text' }"
+          [tcShape]="6"
+        ></tc-textarea>
+      </tc-form-group>
+    </div>
+  </div>
+
+  <tc-alert [beforeIcon]="'icofont-info-circle'" [view]="'warning'">
+    You can find more information about this component on <a href="#" routerLink="../textareas">this page</a>.
+  </tc-alert>
+</tc-card>
+
+<tc-card [title]="'Selects'" *ngIf="selectData.length">
+  <div class="row">
+    <div class="col-12 col-md-6">
+      <tc-form-group>
+        <tc-select [placeholder]="'Simple select'" [options]="selectData"></tc-select>
+      </tc-form-group>
+    </div>
+
+    <div class="col-12 col-md-6">
+      <tc-form-group>
+        <tc-select
+          [placeholder]="'Select placeholder'"
+          [options]="selectData"
+          [selected]="['northAmerica', 'southAmerica']"
+          [multiple]="true"
+          [tcShape]="6"
+        ></tc-select>
+      </tc-form-group>
+    </div>
+  </div>
+
+  <tc-alert [beforeIcon]="'icofont-info-circle'" [view]="'warning'">
+    You can find more information about this component on <a href="#" routerLink="../selects">this page</a>.
+  </tc-alert>
+</tc-card>
+
+<tc-card [title]="'Autocompletes'">
+  <div class="row">
+    <div class="col-12 col-md-6">
+      <tc-form-group>
+        <tc-autocomplete [data]="autocompleteData" [key]="'country'" [placeholder]="'Type country\'s name'"></tc-autocomplete>
+      </tc-form-group>
+    </div>
+
+    <div class="col-12 col-md-6">
+      <tc-form-group>
+        <tc-autocomplete
+          [data]="autocompleteData"
+          [key]="'country'"
+          [prefix]="'Your country'"
+          [tcShape]="6"
+          [placeholder]="'Choose country'"
+          [value]="'Germany'"
+        ></tc-autocomplete>
+      </tc-form-group>
+    </div>
+  </div>
+
+  <tc-alert [beforeIcon]="'icofont-info-circle'" [view]="'warning'">
+    You can find more information about this component on <a href="#" routerLink="../autocompletes">this page</a>.
+  </tc-alert>
+</tc-card>
+
+<tc-card [title]="'Checkboxes'">
+  <tc-form-group>
+    <tc-checkbox>Checkbox 1</tc-checkbox>
+  </tc-form-group>
+
+  <tc-form-group>
+    <tc-checkbox>Checkbox 2</tc-checkbox>
+  </tc-form-group>
+
+  <tc-form-group>
+    <tc-checkbox [value]="true">Checkbox 3</tc-checkbox>
+  </tc-form-group>
+
+  <tc-alert [beforeIcon]="'icofont-info-circle'" [view]="'warning'">
+    You can find more information about this component on <a href="#" routerLink="../checkboxes">this page</a>.
+  </tc-alert>
+</tc-card>
+
+<tc-card [title]="'Radio buttons'">
+  <tc-form-group>
+    <tc-radio [value]="'val2'">
+      <tc-radio-option [value]="'val1'">Option 1</tc-radio-option>
+      <tc-radio-option [value]="'val2'">Option 2</tc-radio-option>
+      <tc-radio-option [value]="'val3'">Option 3</tc-radio-option>
+    </tc-radio>
+  </tc-form-group>
+
+  <tc-alert [beforeIcon]="'icofont-info-circle'">
+    You can find more information about this component on <a href="#" routerLink="../radio-buttons">this page</a>.
+  </tc-alert>
+</tc-card>
+
+<tc-card [title]="'Switchers'">
+  <tc-form-group>
+    <tc-switcher>Control 1</tc-switcher>
+  </tc-form-group>
+
+  <tc-form-group>
+    <tc-switcher>Control 2</tc-switcher>
+  </tc-form-group>
+
+  <tc-form-group>
+    <tc-switcher [value]="true">Control 3</tc-switcher>
+  </tc-form-group>
+
+  <tc-alert [beforeIcon]="'icofont-info-circle'" [view]="'warning'">
+    You can find more information about this component on <a href="#" routerLink="../switchers">this page</a>.
+  </tc-alert>
+</tc-card>
+
+<tc-card [title]="'Buttons'">
+  <div class="buttons-list mb-3">
+    <button tc-button>Default</button>
+    <button tc-button [view]="'accent'">Accent</button>
+    <button tc-button [view]="'success'">Success</button>
+    <button tc-button [view]="'info'">Info</button>
+    <button tc-button [view]="'warning'">Warning</button>
+    <button tc-button [view]="'error'">Error</button>
+  </div>
+
+  <tc-alert [beforeIcon]="'icofont-info-circle'" [view]="'warning'">
+    You can find more information about this component on <a href="#" routerLink="../buttons">this page</a>.
+  </tc-alert>
+</tc-card>
+
+<tc-card [title]="'Badges'">
+  <div class="badges-list mb-3">
+    <tc-badge>Default</tc-badge>
+    <tc-badge [view]="'accent'">Accent</tc-badge>
+    <tc-badge [view]="'success'">Success</tc-badge>
+    <tc-badge [view]="'info'">Info</tc-badge>
+    <tc-badge [view]="'warning'">Warning</tc-badge>
+    <tc-badge [view]="'error'">Error</tc-badge>
+  </div>
+
+  <tc-alert [beforeIcon]="'icofont-info-circle'" [view]="'warning'">
+    You can find more information about this component on <a href="#" routerLink="../badges">this page</a>.
+  </tc-alert>
+</tc-card>
+
+<tc-card [title]="'Ratings'" class="mb-0">
+  <tc-form-group>
+    <tc-rating [value]="4" ></tc-rating>
+  </tc-form-group>
+
+  <tc-alert [beforeIcon]="'icofont-info-circle'" [view]="'warning'">
+    You can find more information about this component on <a href="#" routerLink="../ratings">this page</a>.
+  </tc-alert>
+</tc-card>

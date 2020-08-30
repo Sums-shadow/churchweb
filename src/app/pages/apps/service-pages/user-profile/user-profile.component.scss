@@ -1,0 +1,23 @@
+@import '~src/assets/sass/variables';
+
+:host {
+  .personal-info-card {
+    ::ng-deep {
+      .card-content {
+        padding-top: 0 !important;
+      }
+    }
+    .user-actions {
+      margin-top: -50px;
+    }
+  }
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -($module-rem / 2);
+
+    .tc-badge {
+      margin: $module-rem / 2;
+    }
+  }
+}

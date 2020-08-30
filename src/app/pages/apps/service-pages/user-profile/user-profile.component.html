@@ -1,0 +1,122 @@
+<div class="row" *ngIf="userInfo">
+  <div class="col col-12 col-md-6 mb-4 mb-md-0">
+    <tc-card [img]="'assets/content/user-profile.jpg'" [tcGradient]="['#fff', '#fbfbfb']" class="personal-info-card">
+      <div class="d-flex align-items-center justify-content-between mb-3 user-actions">
+        <tc-avatar [src]="userInfo.mainInfo.img" [size]="100"></tc-avatar>
+
+        <button tc-button [tcBgColor]="'#e91e63'" [tcShape]="500">Subscribe</button>
+      </div>
+
+      <div class="d-flex align-items-center justify-content-between">
+        <h5 class="mb-0 mt-0 mr-1">{{ userInfo.mainInfo.firstName }} {{ userInfo.mainInfo.lastName }}</h5>
+
+        <tc-rating [value]="4" [disabled]="true"></tc-rating>
+      </div>
+
+      <p [tcColor]="'#8f8f90'">{{ userInfo.mainInfo.position }}</p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio dolore enim, nemo nihil non omnis temporibus? Blanditiis
+        culpa labore velit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, provident?</p>
+    </tc-card>
+
+    <tc-card [tcGradient]="['#fff', '#fbfbfb']" [title]="'Websites & social channel'">
+      <div class="row align-items-center mb-3">
+        <div class="col col-auto">
+          <tc-icon [iconClass]="'icofont-github'" [tcFontSize]="30" [tcColor]="'#24292e'"></tc-icon>
+        </div>
+        <div class="col">
+          <div>Github</div>
+          <a href="#" (click)="$event.preventDefault()">github.com/liam-jouns</a>
+        </div>
+      </div>
+
+      <div class="row align-items-center mb-3">
+        <div class="col col-auto">
+          <tc-icon [iconClass]="'icofont-twitter'" [tcFontSize]="30" [tcColor]="'#1da1f2'"></tc-icon>
+        </div>
+        <div class="col">
+          <div>Twitter</div>
+          <a href="#" (click)="$event.preventDefault()">twitter.com/liam-jouns</a>
+        </div>
+      </div>
+
+      <div class="row align-items-center mb-3">
+        <div class="col col-auto">
+          <tc-icon [iconClass]="'icofont-linkedin'" [tcFontSize]="30" [tcColor]="'#0073b1'"></tc-icon>
+        </div>
+        <div class="col">
+          <div>Linkedin</div>
+          <a href="#" (click)="$event.preventDefault()">linkedin.com/liam-jouns</a>
+        </div>
+      </div>
+
+      <div class="row align-items-center">
+        <div class="col col-auto">
+          <tc-icon [iconClass]="'icofont-youtube'" [tcFontSize]="30" [tcColor]="'#ff0000'"></tc-icon>
+        </div>
+        <div class="col">
+          <div>YouTube</div>
+          <a href="#" (click)="$event.preventDefault()">youtube.com/liam-jouns</a>
+        </div>
+      </div>
+    </tc-card>
+
+    <tc-card [tcGradient]="['#fff', '#fbfbfb']" [title]="'Contact information'" class="mb-md-0">
+      <div class="row align-items-center mb-3">
+        <div class="col col-auto">
+          <tc-icon [iconClass]="'icofont-ui-touch-phone'" [tcFontSize]="30" [tcColor]="'#8f8f90'"></tc-icon>
+        </div>
+        <div class="col">
+          <div>Mobile</div>
+          {{ userInfo.mainInfo.number }}
+        </div>
+      </div>
+
+      <div class="row align-items-center mb-3">
+        <div class="col col-auto">
+          <tc-icon [iconClass]="'icofont-slack'" [tcFontSize]="30" [tcColor]="'#8f8f90'"></tc-icon>
+        </div>
+        <div class="col">
+          <div>Slack</div>
+          {{ userInfo.mainInfo.slack }}
+        </div>
+      </div>
+
+      <div class="row align-items-center mb-3">
+        <div class="col col-auto">
+          <tc-icon [iconClass]="'icofont-skype'" [tcFontSize]="30" [tcColor]="'#8f8f90'"></tc-icon>
+        </div>
+        <div class="col">
+          <div>Skype</div>
+          {{ userInfo.mainInfo.skype }}
+        </div>
+      </div>
+
+      <div class="row align-items-center">
+        <div class="col col-auto">
+          <tc-icon [iconClass]="'icofont-location-pin'" [tcFontSize]="30" [tcColor]="'#8f8f90'"></tc-icon>
+        </div>
+        <div class="col">
+          <div>Current Address</div>
+          {{ userInfo.mainInfo.address }}
+        </div>
+      </div>
+    </tc-card>
+  </div>
+
+  <div class="col col-12 col-md-6">
+    <tc-card [title]="'Experience'" [tcGradient]="['#fff', '#fbfbfb']">
+      <tc-v-timeline [data]="userInfo.experience" [showIcons]="false"></tc-v-timeline>
+    </tc-card>
+
+    <tc-card [title]="'Education'" [tcGradient]="['#fff', '#fbfbfb']">
+      <tc-v-timeline [data]="userInfo.education" [showIcons]="false"></tc-v-timeline>
+    </tc-card>
+
+    <tc-card [title]="'Skills'" [tcGradient]="['#fff', '#fbfbfb']" class="mb-0">
+      <div class="skills-list">
+        <tc-badge [outline]="true" [view]="'accent'" *ngFor="let skill of userInfo.skills">{{ skill }}</tc-badge>
+      </div>
+    </tc-card>
+  </div>
+</div>

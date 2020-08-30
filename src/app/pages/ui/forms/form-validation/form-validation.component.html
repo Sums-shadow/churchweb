@@ -1,0 +1,200 @@
+<div class="row">
+  <div class="col-12 col-md-6">
+    <tc-card [title]="'Basic form validation'">
+      <form [formGroup]="basicForm" (ngSubmit)="sendBasicForm(basicForm.valid)" novalidate>
+        <tc-form-group>
+          <tc-input [placeholder]="'First name *'" formControlName="firstName"></tc-input>
+        </tc-form-group>
+
+        <tc-form-group>
+          <tc-input [placeholder]="'Last name *'" formControlName="lastName"></tc-input>
+        </tc-form-group>
+
+        <tc-form-group>
+          <tc-input [placeholder]="'Email *'" [type]="'email'" formControlName="email"></tc-input>
+        </tc-form-group>
+
+        <tc-form-group>
+          <tc-textarea [placeholder]="'Comment *'" formControlName="comment"></tc-textarea>
+        </tc-form-group>
+
+        <button tc-button [block]="true" [view]="'accent'" [disabled]="basicForm.invalid" [load]="loadingBasicForm">
+          Send form
+        </button>
+      </form>
+    </tc-card>
+  </div>
+
+  <div class="col-12 col-md-6">
+    <tc-card [title]="'Validation with label marker'">
+      <form [formGroup]="labelForm" (ngSubmit)="sendLabelForm(labelForm.valid)" novalidate>
+        <tc-form-group>
+          <div class="row align-items-center">
+            <div class="col-12 col-md-4 text-md-right">
+              <tc-form-label
+                class="mb-md-0"
+                [tcColor]="'#e24d4d'"
+                *ngIf="labelForm.controls.firstName.touched && labelForm.controls.firstName.invalid"
+              >First name <sup [tcColor]="'#e24d4d'">*</sup>:</tc-form-label>
+
+              <tc-form-label
+                class="mb-md-0"
+                *ngIf="!(labelForm.controls.firstName.touched && labelForm.controls.firstName.invalid)"
+              >First name <sup [tcColor]="'#e24d4d'">*</sup>:</tc-form-label>
+            </div>
+
+            <div class="col-12 col-md-8">
+              <tc-input
+                [prefixIcon]="'icofont-id'"
+                formControlName="firstName"
+              ></tc-input>
+            </div>
+          </div>
+        </tc-form-group>
+
+        <tc-form-group>
+          <div class="row align-items-center">
+            <div class="col-12 col-md-4 text-md-right">
+              <tc-form-label
+                class="mb-md-0"
+                [tcColor]="'#e24d4d'"
+                *ngIf="labelForm.controls.lastName.touched && labelForm.controls.lastName.invalid"
+              >Last name <sup [tcColor]="'#e24d4d'">*</sup>:</tc-form-label>
+
+              <tc-form-label
+                class="mb-md-0"
+                *ngIf="!(labelForm.controls.lastName.touched && labelForm.controls.lastName.invalid)"
+              >Last name <sup [tcColor]="'#e24d4d'">*</sup>:</tc-form-label>
+            </div>
+
+            <div class="col-12 col-md-8">
+              <tc-input [prefixIcon]="'icofont-invisible'" formControlName="lastName"></tc-input>
+            </div>
+          </div>
+        </tc-form-group>
+
+        <tc-form-group>
+          <div class="row align-items-center">
+            <div class="col-12 col-md-4 text-md-right">
+              <tc-form-label
+                class="mb-md-0"
+                [tcColor]="'#e24d4d'"
+                *ngIf="labelForm.controls.email.touched && labelForm.controls.email.invalid"
+              >Email <sup [tcColor]="'#e24d4d'">*</sup>:</tc-form-label>
+
+              <tc-form-label
+                class="mb-md-0"
+                *ngIf="!(labelForm.controls.email.touched && labelForm.controls.email.invalid)"
+              >Email <sup [tcColor]="'#e24d4d'">*</sup>:</tc-form-label>
+            </div>
+
+            <div class="col-12 col-md-8">
+              <tc-input [type]="'email'" [prefixIcon]="'icofont-at'" formControlName="email"></tc-input>
+            </div>
+          </div>
+        </tc-form-group>
+
+        <tc-form-group>
+          <div class="row align-items-center">
+            <div class="col-12 col-md-4 text-md-right">
+              <tc-form-label
+                class="mb-md-0"
+                [tcColor]="'#e24d4d'"
+                *ngIf="labelForm.controls.password.touched && labelForm.controls.password.invalid"
+              >Password <sup [tcColor]="'#e24d4d'">*</sup>:</tc-form-label>
+
+              <tc-form-label
+                class="mb-md-0"
+                *ngIf="!(labelForm.controls.password.touched && labelForm.controls.password.invalid)"
+              >Password <sup [tcColor]="'#e24d4d'">*</sup>:</tc-form-label>
+            </div>
+
+            <div class="col-12 col-md-8">
+              <tc-input [type]="'password'" [prefixIcon]="'icofont-key'" formControlName="password"></tc-input>
+            </div>
+          </div>
+        </tc-form-group>
+
+        <button
+          tc-button
+          [block]="true"
+          [view]="'info'"
+          [beforeIcon]="'icofont-location-arrow'"
+          [disabled]="labelForm.invalid"
+          [load]="loadingLabelForm"
+        >
+          Submit
+        </button>
+      </form>
+    </tc-card>
+  </div>
+</div>
+
+<tc-card [title]="'Validation with error messages'" class="mb-0">
+  <form [formGroup]="messagesForm" (ngSubmit)="sendMessagesForm(messagesForm.valid)" novalidate>
+    <tc-form-group>
+      <tc-form-label>First name <sup [tcColor]="'#e24d4d'">*</sup></tc-form-label>
+
+      <tc-input [suffixIcon]="'icofont-tick-boxed'" formControlName="firstName"></tc-input>
+
+      <tc-form-description
+        [tcColor]="'#e24d4d'"
+        *ngIf="messagesForm.controls.firstName.touched && messagesForm.controls.firstName.invalid">
+        Enter valid name
+      </tc-form-description>
+    </tc-form-group>
+
+    <tc-form-group>
+      <tc-form-label>Last name <sup [tcColor]="'#e24d4d'"></sup></tc-form-label>
+
+      <tc-input [suffixIcon]="'icofont-tick-mark'" formControlName="lastName"></tc-input>
+    </tc-form-group>
+
+    <tc-form-group>
+      <tc-form-label>Email <sup [tcColor]="'#e24d4d'">*</sup></tc-form-label>
+
+      <tc-input [type]="'email'" [suffixIcon]="'icofont-email'" formControlName="email"></tc-input>
+
+      <tc-form-description
+        [tcColor]="'#e24d4d'"
+        *ngIf="messagesForm.controls.email.touched && messagesForm.controls.email.invalid">
+        Enter valid Email
+      </tc-form-description>
+    </tc-form-group>
+
+    <tc-form-group>
+      <tc-form-label>Password <sup [tcColor]="'#e24d4d'">*</sup></tc-form-label>
+
+      <tc-input [type]="'password'" [suffixIcon]="'icofont-key-hole'" formControlName="password"></tc-input>
+
+      <tc-form-description
+        [tcColor]="'#e24d4d'"
+        *ngIf="messagesForm.controls.password.touched && messagesForm.controls.password.invalid">
+        Enter valid password
+      </tc-form-description>
+    </tc-form-group>
+
+    <div class="buttons">
+      <button
+        tc-button
+        [type]="'button'"
+        [outline]="true"
+        [view]="'error'"
+        [beforeIcon]="'icofont-refresh'"
+        (click)="resetMessagesForm()"
+      >
+        Reset form
+      </button>
+
+      <button
+        tc-button
+        [view]="'info'"
+        [beforeIcon]="'icofont-send-mail'"
+        [disabled]="messagesForm.invalid"
+        [load]="loadingMessagesForm"
+      >
+        Send form
+      </button>
+    </div>
+  </form>
+</tc-card>

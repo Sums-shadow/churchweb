@@ -1,0 +1,58 @@
+@import '~src/assets/sass/variables';
+
+:host {
+  background: url('~src/assets/content/login-page.jpg') 50% 50% no-repeat;
+  background-size: cover;
+  display: block;
+  height: 100%;
+  overflow: auto;
+  width: 100%;
+
+  .page-404 & {
+    background-image: url('~src/assets/content/404-page.jpg');
+
+    .content-box {
+      background: rgba(#fff,.9) !important;
+    }
+  }
+  .page-500 & {
+    background-image: url('~src/assets/content/500-page.jpg');
+
+    .content-box {
+      background: rgba(#fff,.9) !important;
+    }
+  }
+  .register-page & {
+    background-image: url('~src/assets/content/register-page.jpg');
+  }
+  .content-box {
+    background: #fff;
+    box-shadow: $shadow;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    min-height: 100%;
+
+    .content-header {
+      padding-top: $module-rem * 2;
+    }
+    .content-body {
+      align-items: center;
+      display: flex;
+      flex-grow: 1;
+      padding: $module-rem ($module-rem * 4);
+      width: 100%;
+
+      ::ng-deep {
+        > * {
+          display: block;
+          width: 100%;
+        }
+
+        router-outlet {
+          display: none;
+        }
+      }
+    }
+  }
+}

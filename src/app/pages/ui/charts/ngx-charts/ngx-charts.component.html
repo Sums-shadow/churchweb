@@ -1,0 +1,136 @@
+<div class="row">
+	<div class="col-12 col-md-6">
+		<tc-card [title]="'Vertical bar'">
+			<div class="chat-container container-h-300">
+				<ngx-charts-bar-vertical
+	  			[scheme]="ngxChartColors"
+	  			[results]="barChartData"
+	  			[gradient]="false"
+					[barPadding]="20"
+					[xAxis]="true"
+					[yAxis]="true"
+					[legend]="false"
+					[showXAxisLabel]="false"
+					[showYAxisLabel]="false"
+					[roundEdges]="false"
+				></ngx-charts-bar-vertical>
+			</div>
+		</tc-card>
+	</div>
+
+	<div class="col-12 col-md-6">
+		<tc-card [title]="'Horizontal bar'">
+			<div class="chat-container container-h-300">
+				<ngx-charts-bar-horizontal
+	  			[scheme]="ngxChartColors"
+	  			[results]="barChartData"
+					[gradient]="false"
+					[barPadding]="10"
+					[xAxis]="true"
+					[yAxis]="true"
+					[legend]="false"
+					[showXAxisLabel]="false"
+					[showYAxisLabel]="false"
+					[roundEdges]="false"
+				></ngx-charts-bar-horizontal>
+			</div>
+		</tc-card>
+	</div>
+
+	<div class="col-12 col-md-6">
+		<tc-card [title]="'Line'">
+			<div class="chat-container container-h-300">
+				<ngx-charts-line-chart
+	  			[scheme]="ngxChartColors"
+	  			[results]="lineChartData"
+	  			[gradient]="false"
+	  			[xAxis]="true"
+	  			[yAxis]="true"
+	  			[legend]="false"
+					[showXAxisLabel]="false"
+					[showYAxisLabel]="false"
+					[curve]="ngxCurve"
+				></ngx-charts-line-chart>
+			</div>
+		</tc-card>
+	</div>
+
+	<div class="col-12 col-md-6">
+		<tc-card [title]="'Area Chart'">
+			<div class="chat-container container-h-300">
+				<ngx-charts-area-chart
+					[scheme]="ngxChartColors"
+					[results]="lineChartData"
+					[gradient]="false"
+					[xAxis]="true"
+					[yAxis]="true"
+					[legend]="false"
+					[showXAxisLabel]="false"
+					[showYAxisLabel]="false"
+					[curve]="ngxCurve"
+				></ngx-charts-area-chart>
+			</div>
+		</tc-card>
+	</div>
+
+	<div class="col-12 col-md-6">
+		<tc-card [title]="'Pie'">
+			<div class="chat-container container-h-300">
+				<ngx-charts-pie-chart
+					[scheme]="ngxChartColors"
+					[results]="pieChartData"
+					[gradient]="false"
+					[legend]="true"
+					[explodeSlices]="true"
+					[labels]="true"
+					[doughnut]="false"
+				></ngx-charts-pie-chart>
+			</div>
+		</tc-card>
+	</div>
+
+	<div class="col-12 col-md-6">
+		<tc-card [title]="'Advanced pie'" class="mb-md-0">
+			<div class="chat-container container-h-300">
+				<ngx-charts-pie-chart
+					[scheme]="ngxChartColors"
+					[results]="advancedPieChartData"
+					[doughnut]="true"
+					[arcWidth]="0.3"
+					[legend]="false"
+				></ngx-charts-pie-chart>
+			</div>
+		</tc-card>
+	</div>
+
+	<div class="col-12 col-md-6">
+		<tc-card [title]="'Polar'">
+			<div class="chat-container container-h-300">
+				<ngx-charts-polar-chart
+					[scheme]="ngxChartColors"
+					[results]="polarChartData"
+					[showGridLines]="true"
+					[roundDomains]="true"
+					[xAxis]="true"
+					[yAxis]="false"
+					[legend]="false"
+				></ngx-charts-polar-chart>
+			</div>
+		</tc-card>
+	</div>
+
+	<div class="col-12 col-md-6">
+		<tc-card [title]="'Gauge'">
+			<div class="chat-container container-h-300">
+				<ngx-charts-gauge
+					[scheme]="ngxChartColors"
+					[results]="gaugeChartData"
+				></ngx-charts-gauge>
+			</div>
+		</tc-card>
+	</div>
+</div>
+
+<tc-alert [beforeIcon]="'icofont-chart-line-alt'" [view]="'default'">
+  More information can be found in <a href="https://github.com/swimlane/ngx-charts" target="_blank">official page</a>.
+</tc-alert>

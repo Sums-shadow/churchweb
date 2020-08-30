@@ -1,0 +1,128 @@
+<div class="row justify-content-center" *ngIf="userInfo">
+  <div class="col col-12 col-xl-8">
+    <form
+      [formGroup]="userForm"
+      novalidate
+      class="mb-4"
+      (ngSubmit)="saveData(userForm)"
+    >
+      <tc-form-group>
+        <tc-form-label>Photo</tc-form-label>
+        <input type="file" accept="image/*" (change)="onFileChanged($event)" #fileInput hidden>
+
+        <div class="d-flex align-items-center">
+          <tc-avatar [src]="currentAvatar" [size]="100"></tc-avatar>
+          <button
+            tc-button
+            [type]="'button'"
+            [afterIcon]="'icofont-ui-user'"
+            [view]="'accent'"
+            [outline]="true"
+            (click)="fileInput.click()"
+          >
+            Change photo
+          </button>
+        </div>
+      </tc-form-group>
+
+      <tc-form-group>
+        <tc-form-label>First name</tc-form-label>
+        <tc-input [placeholder]="'First name'" formControlName="firstName"></tc-input>
+      </tc-form-group>
+
+      <tc-form-group>
+        <tc-form-label>Last name</tc-form-label>
+        <tc-input [placeholder]="'Last name'" formControlName="lastName"></tc-input>
+      </tc-form-group>
+
+      <div class="row">
+        <div class="col-12 col-sm-6">
+          <tc-form-group>
+            <tc-form-label>Age</tc-form-label>
+            <tc-input [placeholder]="'Age'" formControlName="age" [type]="'number'"></tc-input>
+          </tc-form-group>
+        </div>
+
+        <div class="col-12 col-sm-6">
+          <tc-form-group>
+            <tc-form-label>Gender</tc-form-label>
+            <tc-select [placeholder]="'Gender'" formControlName="gender" [options]="gender"></tc-select>
+          </tc-form-group>
+        </div>
+      </div>
+
+      <tc-form-group>
+        <tc-form-label>Phone number</tc-form-label>
+        <tc-input [placeholder]="'Number'" formControlName="number"></tc-input>
+      </tc-form-group>
+
+      <tc-form-group>
+        <tc-form-label>Address</tc-form-label>
+        <tc-textarea [placeholder]="'Address'" formControlName="address"></tc-textarea>
+      </tc-form-group>
+
+      <tc-form-group>
+        <tc-form-label>Last visit</tc-form-label>
+        <tc-input [placeholder]="'Last visit'" formControlName="lastVisit" [readonly]="true"></tc-input>
+      </tc-form-group>
+
+      <tc-form-group>
+        <tc-form-label>Status</tc-form-label>
+        <tc-select [placeholder]="'Status'" formControlName="status" [options]="status"></tc-select>
+      </tc-form-group>
+
+      <div class="row">
+        <div class="col">
+          <button tc-button [view]="'success'" [disabled]="!changes || userForm.invalid">
+            Save changes
+          </button>
+        </div>
+        <div class="col text-right">
+          <button
+            tc-button
+            [type]="'button'"
+            [view]="'error'"
+            [outline]="true"
+          >
+            <span class="d-none d-sm-block">Delete account</span>
+            <span class="d-sm-none">Delete</span>
+          </button>
+        </div>
+      </div>
+    </form>
+
+    <hr>
+
+    <h4>Change password</h4>
+
+    <form novalidate>
+      <div class="row">
+        <div class="col-12 col-sm-6">
+          <tc-form-group>
+            <tc-form-label>Current password</tc-form-label>
+            <tc-input [placeholder]="'Current password'"></tc-input>
+          </tc-form-group>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-sm-6">
+          <tc-form-group>
+            <tc-form-label>New password</tc-form-label>
+            <tc-input [placeholder]="'New password'"></tc-input>
+          </tc-form-group>
+        </div>
+
+        <div class="col-12 col-sm-6">
+          <tc-form-group>
+            <tc-form-label>Confirm new password</tc-form-label>
+            <tc-input [placeholder]="'Confirm new password'"></tc-input>
+          </tc-form-group>
+        </div>
+      </div>
+
+      <button tc-button [view]="'default'" [outline]="true" [type]="'button'">
+        Change password
+      </button>
+    </form>
+  </div>
+</div>

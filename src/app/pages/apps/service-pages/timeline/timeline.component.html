@@ -1,0 +1,68 @@
+<tc-card [tcGradient]="['#f3f3f4', '#e1e1e2']" [tcColor]="'#1f2022'">
+  <div class="row">
+    <div class="col-12 col-md-6 mb-4 mb-md-0">
+      <img src="assets/img/logo.png" alt="">
+      <h3 class="">Medicine Clinic</h3>
+      <p [tcColor]="'#626364'">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus id perferendis unde voluptas voluptatem? Ad alias deleniti eum nulla tempore.</p>
+    </div>
+
+    <div class="col-12 col-md-6 text-right">
+      <h4 class="mt-0 mb-1" [tcColor]="'#336cfb'">$25038</h4>
+      <p class="mb-0" [tcColor]="'#9d9d9d'">Income in current month</p>
+
+      <div echarts [options]="piOptions" class="chat-container container-h-100"></div>
+    </div>
+  </div>
+</tc-card>
+
+<div class="row">
+  <div class="col-12 col-md-4">
+    <tc-card [view]="'accent'" [title]="'Introduction'">
+      <h6 class="mt-0 mb-0">Address</h6>
+      <p>795 Folsom Ave, Suite 600 San Francisco, CADGE 94107</p>
+      <h6 class="mt-0 mb-0">Email</h6>
+      <p>denta@gmail.com</p>
+      <h6 class="mt-0 mb-0">Phone</h6>
+      <p>0126596452</p>
+    </tc-card>
+
+    <tc-card [title]="'Last patients'">
+      <tc-table [rows]="lastPatients">
+        <tc-table-col [columnTitle]="'Patient'" [columnName]="'patient'">
+          <ng-template #tableTDTemplate let-value>
+            <div class="d-flex align-items-center">
+              <tc-avatar [src]="value.img"></tc-avatar>
+              <strong>{{ value.name }}</strong>
+            </div>
+          </ng-template>
+        </tc-table-col>
+        <tc-table-col [columnTitle]="'Date'" [columnName]="'date'">
+          <ng-template #tableTDTemplate let-value>
+            <span [tcColor]="'#a5a5a5'">{{ value }}</span>
+          </ng-template>
+        </tc-table-col>
+      </tc-table>
+    </tc-card>
+
+    <tc-card [title]="'Last payments'" class="mb-0">
+      <tc-table [rows]="lastPayments">
+        <tc-table-col [columnTitle]="'Date'" [columnName]="'date'">
+          <ng-template #tableTDTemplate let-value>
+            <span [tcColor]="'#a5a5a5'">{{ value }}</span>
+          </ng-template>
+        </tc-table-col>
+        <tc-table-col [columnTitle]="'Amount'" [columnName]="'amount'">
+          <ng-template #tableTDTemplate let-value>
+            <tc-badge class="nowrap" [view]="'success'" [tcShape]="0">{{ value }}</tc-badge>
+          </ng-template>
+        </tc-table-col>
+      </tc-table>
+    </tc-card>
+  </div>
+
+  <div class="col-12 col-md-8 mt-4 mt-md-0">
+    <tc-card [title]="'Our timeline'" class="mb-0">
+      <tc-v-timeline [data]="timelineData" [showLabels]="true"></tc-v-timeline>
+    </tc-card>
+  </div>
+</div>

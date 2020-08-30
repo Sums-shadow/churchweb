@@ -1,0 +1,33 @@
+<tc-card [title]="'Bar'">
+  <div echarts [options]="barOptions" class="chat-container container-h-400"></div>
+</tc-card>
+
+<tc-card [title]="'Area'">
+  <div echarts [options]="areaOptions" class="chat-container container-h-400"></div>
+</tc-card>
+
+<tc-card [title]="'Line'">
+  <div echarts [options]="lineOptions" class="chat-container container-h-400"></div>
+</tc-card>
+
+<tc-card [title]="'Line with points'">
+  <div echarts [options]="line2Options" class="chat-container container-h-400"></div>
+</tc-card>
+
+<div class="row">
+  <div class="col-12 col-md-6">
+    <tc-card [title]="'Pie'">
+      <div echarts [options]="pieOptions" class="chat-container container-h-400"></div>
+    </tc-card>
+  </div>
+
+  <div class="col-12 col-md-6">
+    <tc-card [title]="'Hole pie'">
+      <div echarts [options]="pie2Options" class="chat-container container-h-400"></div>
+    </tc-card>
+  </div>
+</div>
+
+<tc-alert [beforeIcon]="'icofont-chart-line'" [view]="'default'">
+  More information can be found in <a href="https://github.com/xieziyu/ngx-echarts" target="_blank">official page</a>.
+</tc-alert>

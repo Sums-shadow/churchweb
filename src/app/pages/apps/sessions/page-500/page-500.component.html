@@ -1,0 +1,20 @@
+<div class="w-100 text-center">
+  <div class="display-1 d-flex mb-5 justify-content-center align-items-center">
+    <tc-icon
+      [iconClass]="'icofont-exclamation-tringle'"
+      [tcColor]="'rgba(237,85,100,0.5)'"
+      [tcFontSize]="'6rem'"
+      [padding]="0"
+      class="mr-2"
+    ></tc-icon>
+
+    <div class="font-weight-normal text-muted mt-0 mb-0">500</div>
+  </div>
+
+  <h1 class="mb-2" [tcFontSize]="20">Oopps. There was an error, please try again later.</h1>
+  <p class="mb-5 text-muted">The server encountered an internal server error and was unable to complete your request.</p>
+
+  <button tc-button [view]="'accent'" [beforeIcon]="'icofont-home'" [routerLink]="['/vertical/default-dashboard']">
+    Back to home
+  </button>
+</div>

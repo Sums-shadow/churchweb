@@ -1,0 +1,179 @@
+<div class="row">
+  <div class="col-md-6">
+    <tc-card [title]="'Basic'">
+      <tc-form-group>
+        <tc-autocomplete [data]="data" [key]="'country'" [value]="'Ukraine'"></tc-autocomplete>
+      </tc-form-group>
+
+      <tc-form-group class="mb-0">
+        <tc-autocomplete [data]="data" [key]="'country'" [placeholder]="'With placeholder'"></tc-autocomplete>
+      </tc-form-group>
+    </tc-card>
+  </div>
+
+  <div class="col-md-6">
+    <tc-card [title]="'Prefix / suffix'">
+      <tc-form-group>
+        <tc-autocomplete
+          [data]="data"
+          [key]="'country'"
+          [prefix]="'Your country'"
+          [placeholder]="'Choose country'"
+          [value]="'Germany'"
+        ></tc-autocomplete>
+      </tc-form-group>
+
+      <tc-form-group class="mb-0">
+        <tc-autocomplete
+          [data]="data"
+          [key]="'country'"
+          [suffix]="'native'"
+          [placeholder]="'Choose country'"
+        ></tc-autocomplete>
+      </tc-form-group>
+    </tc-card>
+  </div>
+
+  <div class="col-md-6">
+    <tc-card [title]="'Input size'">
+      <tc-form-group>
+        <tc-autocomplete [data]="data" [key]="'country'" [size]="'sm'" [placeholder]="'Small size'"></tc-autocomplete>
+      </tc-form-group>
+
+      <tc-form-group class="mb-0">
+        <tc-autocomplete [data]="data" [key]="'country'" [size]="'lg'" [placeholder]="'Large size'"></tc-autocomplete>
+      </tc-form-group>
+    </tc-card>
+  </div>
+
+  <div class="col-md-6">
+    <tc-card [title]="'With icons'">
+      <tc-form-group>
+        <tc-autocomplete
+          [data]="data"
+          [key]="'country'"
+          [prefixIcon]="'icofont-test-bottle'"
+          [placeholder]="'Choose country'"
+        ></tc-autocomplete>
+      </tc-form-group>
+
+      <tc-form-group class="mb-0">
+        <tc-autocomplete
+          [data]="data"
+          [key]="'country'"
+          [suffixIcon]="'icofont-crown-queen'"
+          [placeholder]="'Choose country'"
+        ></tc-autocomplete>
+      </tc-form-group>
+    </tc-card>
+  </div>
+
+  <div class="col-md-6">
+    <tc-card [title]="'Shape'">
+      <tc-form-group>
+        <tc-autocomplete [data]="data" [key]="'country'" [tcShape]="0" [placeholder]="'Square'"></tc-autocomplete>
+      </tc-form-group>
+
+      <tc-form-group class="mb-0">
+        <tc-autocomplete [data]="data" [key]="'country'" [tcShape]="6" [placeholder]="'Rounded'"></tc-autocomplete>
+      </tc-form-group>
+    </tc-card>
+  </div>
+
+  <div class="col-md-6">
+    <tc-card [title]="'Char limiting'">
+      <tc-form-group>
+        <tc-autocomplete
+          [data]="data"
+          [key]="'country'"
+          [charLimiting]="20"
+          [placeholder]="'Limit 20 symbols'"
+          [value]="'Italy'"
+        ></tc-autocomplete>
+      </tc-form-group>
+
+      <tc-form-group class="mb-0">
+        <tc-autocomplete
+          [data]="data"
+          [key]="'country'"
+          [charLimiting]="5"
+          [suffixIcon]="'icofont-ui-email'"
+          [placeholder]="'Limit 10 symbols'"
+        ></tc-autocomplete>
+      </tc-form-group>
+    </tc-card>
+  </div>
+</div>
+
+<tc-card [title]="'Custom styles'" class="mb-0">
+  <div class="row">
+    <div class="col-md-6">
+      <tc-form-group>
+        <tc-form-label>Custom control style</tc-form-label>
+
+        <tc-autocomplete
+          [data]="data"
+          [key]="'country'"
+          [bgColor]="'#b7ce63'"
+          [borderColor]="'#b7ce63'"
+          [color]="'#fff'"
+          [placeholder]="'Choose country'"
+          [value]="'France'"
+        ></tc-autocomplete>
+      </tc-form-group>
+    </div>
+
+    <div class="col-md-6">
+      <tc-form-group>
+        <tc-form-label>Custom control style</tc-form-label>
+
+        <tc-autocomplete
+          [data]="data"
+          [key]="'country'"
+          [bgColor]="['#fff', '#ed5564', '#ab3d48']"
+          [borderColor]="['#ed5564', '#ed5564', '#ab3d48']"
+          [color]="['#ed5564', '#fff', '#fff']"
+          [placeholder]="'Choose country'"
+          [value]="'Argentina'"
+        ></tc-autocomplete>
+      </tc-form-group>
+    </div>
+
+    <div class="col-md-6">
+      <tc-form-group class="mb-md-0">
+        <tc-form-label>Custom list style</tc-form-label>
+
+        <tc-autocomplete
+          [data]="data"
+          [key]="'country'"
+          [color]="['#000', '#000', '#fff']"
+          [borderColor]="['#e9e165', '#e9e165', '#a29c46']"
+          [bgColor]="['#fff', '#e9e165','#a29c46']"
+          [listBgColor]="'#e9e165'"
+          [listBorderColor]="'#a29c46'"
+          [listColor]="'#1f1e0d'"
+          [placeholder]="'Choose country'"
+        ></tc-autocomplete>
+      </tc-form-group>
+    </div>
+
+    <div class="col-md-6">
+      <tc-form-group class="mb-0">
+        <tc-form-label>Custom mark style</tc-form-label>
+
+        <tc-autocomplete
+          [data]="data"
+          [key]="'country'"
+          [bgColor]="['#336cfb', '#fff', '#0732b1']"
+          [borderColor]="['#336cfb', '#2f63fd', '#0732b1']"
+          [color]="['#fff', '#336cfb', '#fff']"
+          [listMarkColor]="'#fc78c2'"
+          [placeholder]="'Choose country'"
+          [value]="'Canada'"
+        ></tc-autocomplete>
+      </tc-form-group>
+    </div>
+  </div>
+</tc-card>
+
+

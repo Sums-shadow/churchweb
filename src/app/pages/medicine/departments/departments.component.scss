@@ -1,0 +1,24 @@
+@import '~src/assets/sass/variables';
+
+:host {
+  .department {
+    .team {
+      flex-wrap: wrap;
+
+      .tc-avatar {
+        box-shadow: $shadow;
+        margin-right: -10px;
+      }
+    }
+  }
+  .add-action-box {
+    bottom: $module-rem * 8;
+    position: fixed;
+    right: $module-rem * 2;
+    z-index: 9997;
+
+    .tc-btn {
+      font-size: 30px;
+    }
+  }
+}

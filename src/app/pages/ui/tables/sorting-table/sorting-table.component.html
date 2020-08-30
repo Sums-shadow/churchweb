@@ -1,0 +1,18 @@
+<tc-card class="mb-0">
+	<tc-table [rows]="tableData" [hovered]="true">
+		<tc-table-col [columnTitle]="'Name'" [columnName]="'name'" [enableSorting]="true"></tc-table-col>
+		<tc-table-col [columnTitle]="'Position'" [columnName]="'position'" [enableSorting]="true"></tc-table-col>
+		<tc-table-col [columnTitle]="'Office'" [columnName]="'office'" [enableSorting]="true"></tc-table-col>
+		<tc-table-col [columnTitle]="'Age'" [columnName]="'age'" [enableSorting]="true"></tc-table-col>
+    <tc-table-col [columnTitle]="'Date'" [columnName]="'start-date'" [enableSorting]="true">
+      <ng-template #tableTDTemplate let-value>
+        <span class="nowrap" [tcColor]="'#a5a5a5'">{{ value }}</span>
+      </ng-template>
+    </tc-table-col>
+    <tc-table-col [columnTitle]="'Salary'" [columnName]="'salary'" [enableSorting]="true">
+      <ng-template #tableTDTemplate let-value>
+        <span class="nowrap" [tcColor]="'#336cfb'">{{ value }}</span>
+      </ng-template>
+    </tc-table-col>
+	</tc-table>
+</tc-card>

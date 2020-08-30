@@ -1,0 +1,82 @@
+<div class="row">
+	<div class="col-12 col-md-6">
+		<tc-card [title]="'Linear'">
+			<canvas
+				baseChart
+				[datasets]="lineChartData"
+				[labels]="lineChartLabels"
+				[options]="lineChartOptions"
+				[colors]="chartColors"
+				[legend]="lineChartLegend"
+				[chartType]="lineChartType"
+      ></canvas>
+		</tc-card>
+	</div>
+
+	<div class="col-12 col-md-6">
+		<tc-card [title]="'Bar'">
+			<canvas
+        baseChart
+        [datasets]="barChartData"
+        [labels]="barChartLabels"
+        [options]="barChartOptions"
+        [colors]="barChartColors"
+        [legend]="barChartLegend"
+        [chartType]="barChartType"
+      ></canvas>
+		</tc-card>
+	</div>
+
+	<div class="col-12 col-md-6">
+		<tc-card [title]="'Doughnut'">
+			<canvas
+        baseChart
+        [data]="doughnutChartData"
+        [labels]="doughnutChartLabels"
+        [chartType]="doughnutChartType"
+        [colors]="doughnutChartColors"
+      ></canvas>
+		</tc-card>
+	</div>
+
+	<div class="col-12 col-md-6">
+		<tc-card [title]="'Radar'">
+			<canvas
+        baseChart
+        [datasets]="radarChartData"
+        [labels]="radarChartLabels"
+        [colors]="chartColors"
+        [chartType]="radarChartType"
+      ></canvas>
+		</tc-card>
+	</div>
+
+	<div class="col-12 col-md-6">
+		<tc-card [title]="'Pie'">
+			<canvas
+        baseChart
+				[data]="pieChartData"
+				[labels]="pieChartLabels"
+				[chartType]="pieChartType"
+        [colors]="pieChartColors"
+			></canvas>
+		</tc-card>
+	</div>
+
+	<div class="col-12 col-md-6">
+		<tc-card [title]="'Polar area'">
+			<canvas
+        baseChart
+        [data]="polarAreaChartData"
+        [labels]="polarAreaChartLabels"
+        [legend]="polarAreaChartLegend"
+        [chartType]="polarAreaChartType"
+        [colors]="polarAreaChartColors"
+      ></canvas>
+		</tc-card>
+	</div>
+</div>
+
+<tc-alert [beforeIcon]="'icofont-chart-pie'" [view]="'default'">
+  More information can be found in <a href="https://github.com/valor-software/ng2-charts" target="_blank">official page</a>.
+</tc-alert>

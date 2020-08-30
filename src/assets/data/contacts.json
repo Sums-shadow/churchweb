@@ -1,0 +1,191 @@
+[
+  {
+    "img": "assets/content/user-400-1.jpg",
+    "name": "Mayank Jani",
+    "role": "Director",
+    "address": "795 Folsom Ave, Suite 600 San Francisco, CADGE 94107",
+    "profileLink": "",
+    "social": [
+      {
+        "icon": "icofont-instagram",
+        "link": "#"
+      },
+      {
+        "icon": "icofont-facebook",
+        "link": "#"
+      },
+      {
+        "icon": "icofont-twitter",
+        "link": "#"
+      }
+    ]
+  },
+  {
+    "img": "assets/content/user-400-2.jpg",
+    "name": "Sara Jani",
+    "role": "Designer",
+    "address": "795 Folsom Ave, Suite 600 San Francisco, CADGE 94107",
+    "profileLink": "",
+    "social": [
+      {
+        "icon": "icofont-instagram",
+        "link": "#"
+      },
+      {
+        "icon": "icofont-facebook",
+        "link": "#"
+      },
+      {
+        "icon": "icofont-twitter",
+        "link": "#"
+      }
+    ]
+  },
+  {
+    "img": "assets/content/user-400-3.jpg",
+    "name": "Jenish Shah",
+    "role": "Manager",
+    "address": "795 Folsom Ave, Suite 600 San Francisco, CADGE 94107",
+    "profileLink": "",
+    "social": [
+      {
+        "icon": "icofont-instagram",
+        "link": "#"
+      },
+      {
+        "icon": "icofont-facebook",
+        "link": "#"
+      },
+      {
+        "icon": "icofont-twitter",
+        "link": "#"
+      }
+    ]
+  },
+  {
+    "img": "assets/content/user-400-4.jpg",
+    "name": "Jayna Sharma",
+    "role": "Marketer",
+    "address": "795 Folsom Ave, Suite 600 San Francisco, CADGE 94107",
+    "profileLink": "",
+    "social": [
+      {
+        "icon": "icofont-instagram",
+        "link": "#"
+      },
+      {
+        "icon": "icofont-facebook",
+        "link": "#"
+      },
+      {
+        "icon": "icofont-twitter",
+        "link": "#"
+      }
+    ]
+  },
+  {
+    "img": "assets/content/user-400-5.jpg",
+    "name": "Jacob Ryan",
+    "role": "Marketer",
+    "address": "795 Folsom Ave, Suite 600 San Francisco, CADGE 94107",
+    "profileLink": "",
+    "social": [
+      {
+        "icon": "icofont-instagram",
+        "link": "#"
+      },
+      {
+        "icon": "icofont-facebook",
+        "link": "#"
+      },
+      {
+        "icon": "icofont-twitter",
+        "link": "#"
+      }
+    ]
+  },
+  {
+    "img": "assets/content/user-400-6.jpg",
+    "name": "Sofia Malik",
+    "role": "Developer",
+    "address": "795 Folsom Ave, Suite 600 San Francisco, CADGE 94107",
+    "profileLink": "",
+    "social": [
+      {
+        "icon": "icofont-instagram",
+        "link": "#"
+      },
+      {
+        "icon": "icofont-facebook",
+        "link": "#"
+      },
+      {
+        "icon": "icofont-twitter",
+        "link": "#"
+      }
+    ]
+  },
+  {
+    "img": "assets/content/user-400-7.jpg",
+    "name": "Sofia Dynna",
+    "role": "Seller",
+    "address": "795 Folsom Ave, Suite 600 San Francisco, CADGE 94107",
+    "profileLink": "",
+    "social": [
+      {
+        "icon": "icofont-instagram",
+        "link": "#"
+      },
+      {
+        "icon": "icofont-facebook",
+        "link": "#"
+      },
+      {
+        "icon": "icofont-twitter",
+        "link": "#"
+      }
+    ]
+  },
+  {
+    "img": "assets/content/user-400-8.jpg",
+    "name": "Helen Rybi",
+    "role": "Seller",
+    "address": "795 Folsom Ave, Suite 600 San Francisco, CADGE 94107",
+    "profileLink": "",
+    "social": [
+      {
+        "icon": "icofont-instagram",
+        "link": "#"
+      },
+      {
+        "icon": "icofont-facebook",
+        "link": "#"
+      },
+      {
+        "icon": "icofont-twitter",
+        "link": "#"
+      }
+    ]
+  },
+  {
+    "img": "assets/content/user-400-9.jpg",
+    "name": "Tom Callahan",
+    "role": "Designer",
+    "address": "795 Folsom Ave, Suite 600 San Francisco, CADGE 94107",
+    "profileLink": "",
+    "social": [
+      {
+        "icon": "icofont-instagram",
+        "link": "#"
+      },
+      {
+        "icon": "icofont-facebook",
+        "link": "#"
+      },
+      {
+        "icon": "icofont-twitter",
+        "link": "#"
+      }
+    ]
+  }
+]

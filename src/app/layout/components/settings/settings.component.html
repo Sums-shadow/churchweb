@@ -1,0 +1,54 @@
+<form [formGroup]="form" novalidate>
+  <tc-form-group>
+    <tc-form-label>Couleur de fond du menu</tc-form-label>
+
+    <tc-color-picker
+      [palette]="true"
+      [width]="240"
+      [overlay]="true"
+      [savedColor]="form.value.topbarBg"
+      (colorSelected)="changeTopbarColor($event)"
+      formControlName="topbarBg"
+    ></tc-color-picker>
+  </tc-form-group>
+
+  <tc-form-group>
+    <tc-form-label>Couleur de fond du
+      <span *ngIf="form.value.layout === 'vertical'">Menu Vertical</span>
+      <span *ngIf="form.value.layout === 'horizontal'">Menu Vertical</span>
+      
+    </tc-form-label>
+
+    <tc-color-picker
+      [palette]="true"
+      [width]="240"
+      [overlay]="true"
+      [savedColor]="form.value.sidebarBg"
+      (colorSelected)="changeSidebarColor($event)"
+      formControlName="sidebarBg"
+    ></tc-color-picker>
+  </tc-form-group>
+
+  <!-- <tc-form-group>
+    <tc-form-label>Layout</tc-form-label>
+
+    <tc-select
+      [placeholder]="'Select layout'"
+      [options]="layouts"
+      formControlName="layout"
+    ></tc-select>
+  </tc-form-group> -->
+
+  <tc-form-group>
+    <tc-form-label>Mode plein</tc-form-label>
+
+    <tc-switcher [value]="settings.boxed" formControlName="boxed"></tc-switcher>
+  </tc-form-group>
+
+  <div class="actions d-flex justify-content-between flex-column flex-sm-row">
+    <button tc-button [view]="'error'" (click)="resetSettings()">Réinitialiser le paramétre</button>
+    <a tc-button [view]="'accent'" [href]="downloadJsonHref" download="settings.json" class="mt-2 mt-sm-0">
+      Télécharger le paramétre
+    </a>
+  </div>
+</form>

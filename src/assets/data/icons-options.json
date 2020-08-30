@@ -1,0 +1,595 @@
+{
+  "default": [
+    "icofont-basket",
+    "icofont-bin",
+    "icofont-box",
+    "icofont-bucket2",
+    "icofont-diskette",
+    "icofont-brand-apple",
+    "icofont-monkey-face",
+    "icofont-ui-alarm",
+    "icofont-football-american",
+    "icofont-doctor-alt",
+    "icofont-drug",
+    "icofont-first-aid",
+    "icofont-heart-beat-alt",
+    "icofont-injection-syringe",
+    "icofont-thermometer-alt"
+  ],
+  "color": [
+    {
+      "class": "icofont-articulated-truck",
+      "color": "#F44336"
+    },
+    {
+      "class": "icofont-auto-mobile",
+      "color": "#E91E63"
+    },
+    {
+      "class": "icofont-bicycle-alt-2",
+      "color": "#9C27B0"
+    },
+    {
+      "class": "icofont-bus-alt-1",
+      "color": "#673AB7"
+    },
+    {
+      "class": "icofont-car-alt-3",
+      "color": "#ff8018"
+    },
+    {
+      "class": "icofont-helicopter",
+      "color": "#2196F3"
+    },
+    {
+      "class": "icofont-sail-boat",
+      "color": "#03A9F4"
+    },
+    {
+      "class": "icofont-train-steam",
+      "color": "#00BCD4"
+    },
+    {
+      "class": "icofont-apple-watch",
+      "color": "#e8b7dd"
+    },
+    {
+      "class": "icofont-headphone-alt-3",
+      "color": "#4CAF50"
+    },
+    {
+      "class": "icofont-radio-mic",
+      "color": "#8BC34A"
+    },
+    {
+      "class": "icofont-pen-alt-1",
+      "color": "#CDDC39"
+    },
+    {
+      "class": "icofont-delete-alt",
+      "color": "#ffc61d"
+    },
+    {
+      "class": "icofont-crown-king",
+      "color": "#0913ff"
+    },
+    {
+      "class": "icofont-bell-alt",
+      "color": "#aea238"
+    },
+    {
+      "class": "icofont-instrument",
+      "color": "#607D8B"
+    }
+  ],
+  "hoverColor": [
+    {
+      "class": "icofont-test-tube-alt",
+      "color": ["", "#F44336"]
+    },
+    {
+      "class": "icofont-law-alt-3",
+      "color": ["", "#E91E63"]
+    },
+    {
+      "class": "icofont-boy",
+      "color": ["", "#9C27B0"]
+    },
+    {
+      "class": "icofont-kid",
+      "color": ["", "#673AB7"]
+    },
+    {
+      "class": "icofont-music-disk",
+      "color": ["#3F51B5", ""]
+    },
+    {
+      "class": "icofont-record",
+      "color": ["#2196F3", ""]
+    },
+    {
+      "class": "icofont-briefcase-1",
+      "color": ["#03A9F4", ""]
+    },
+    {
+      "class": "icofont-baby-trolley",
+      "color": ["#00BCD4", ""]
+    },
+    {
+      "class": "icofont-safety-pin",
+      "color": ["#009688", "#FFEB3B"]
+    },
+    {
+      "class": "icofont-beach-bed",
+      "color": ["#4CAF50", "#FFC107"]
+    },
+    {
+      "class": "icofont-chart-pie-alt",
+      "color": ["#8BC34A", "#FF9800"]
+    },
+    {
+      "class": "icofont-search-document",
+      "color": ["#CDDC39", "#607D8B"]
+    },
+    {
+      "class": "icofont-brainstorming",
+      "color": ["#FFEB3B", "#009688"]
+    },
+    {
+      "class": "icofont-education",
+      "color": ["#FFC107", "#4CAF50"]
+    },
+    {
+      "class": "icofont-halloween-pumpkin",
+      "color": ["#FF9800", "#8BC34A"]
+    },
+    {
+      "class": "icofont-tree-alt",
+      "color": ["#607D8B", "#CDDC39"]
+    }
+  ],
+  "bgColor": [
+    {
+      "class": "icofont-laboratory",
+      "color": "#86251e"
+    },
+    {
+      "class": "icofont-bull-dozer",
+      "color": "#7e1036"
+    },
+    {
+      "class": "icofont-fix-tools",
+      "color": "#671a74"
+    },
+    {
+      "class": "icofont-recycling-man",
+      "color": "#442678"
+    },
+    {
+      "class": "icofont-vehicle-trucktor",
+      "color": "#733a0b"
+    },
+    {
+      "class": "icofont-wrench",
+      "color": "#104a78"
+    },
+    {
+      "class": "icofont-snow-temp",
+      "color": "#025e88"
+    },
+    {
+      "class": "icofont-umbrella-alt",
+      "color": "#006673"
+    },
+    {
+      "class": "icofont-basketball-hoop",
+      "color": "#7e6378"
+    },
+    {
+      "class": "icofont-volleyball",
+      "color": "#347736"
+    },
+    {
+      "class": "icofont-ui-clip",
+      "color": "#53752c"
+    },
+    {
+      "class": "icofont-bell-pepper-capsicum",
+      "color": "#727a20"
+    },
+    {
+      "class": "icofont-cheese",
+      "color": "#7a5f0e"
+    },
+    {
+      "class": "icofont-cola",
+      "color": "#04097e"
+    },
+    {
+      "class": "icofont-honey",
+      "color": "#6a6322"
+    },
+    {
+      "class": "icofont-tomato",
+      "color": "#3e515a"
+    }
+  ],
+  "hoverBgColor": [
+    {
+      "class": "icofont-clouds",
+      "color": ["", "#F44336"]
+    },
+    {
+      "class": "icofont-compass-alt",
+      "color": ["", "#E91E63"]
+    },
+    {
+      "class": "icofont-dust",
+      "color": ["", "#9C27B0"]
+    },
+    {
+      "class": "icofont-eclipse",
+      "color": ["", "#673AB7"]
+    },
+    {
+      "class": "icofont-full-sunny",
+      "color": ["#3F51B5", ""]
+    },
+    {
+      "class": "icofont-hail-thunder",
+      "color": ["#2196F3", ""]
+    },
+    {
+      "class": "icofont-hill-night",
+      "color": ["#03A9F4", ""]
+    },
+    {
+      "class": "icofont-island",
+      "color": ["#00BCD4", ""]
+    },
+    {
+      "class": "icofont-rainy",
+      "color": ["#009688", "#FFEB3B"]
+    },
+    {
+      "class": "icofont-snow",
+      "color": ["#4CAF50", "#FFC107"]
+    },
+    {
+      "class": "icofont-snowy-windy",
+      "color": ["#8BC34A", "#FF9800"]
+    },
+    {
+      "class": "icofont-sun-alt",
+      "color": ["#CDDC39", "#607D8B"]
+    },
+    {
+      "class": "icofont-snow-flake",
+      "color": ["#FFEB3B", "#009688"]
+    },
+    {
+      "class": "icofont-umbrella-alt",
+      "color": ["#FFC107", "#4CAF50"]
+    },
+    {
+      "class": "icofont-tornado",
+      "color": ["#FF9800", "#8BC34A"]
+    },
+    {
+      "class": "icofont-thermometer",
+      "color": ["#607D8B", "#CDDC39"]
+    }
+  ],
+  "borderColor": [
+    {
+      "class": "icofont-apple",
+      "color": "#411034",
+      "borderColor": "#411034"
+    },
+    {
+      "class": "icofont-artichoke",
+      "color": "#8d2d66",
+      "borderColor": "#8d2d66"
+    },
+    {
+      "class": "icofont-avocado",
+      "color": "#b891c1",
+      "borderColor": "#b891c1"
+    },
+    {
+      "class": "icofont-banana",
+      "color": "#add2f8",
+      "borderColor": "#add2f8"
+    },
+    {
+      "class": "icofont-beer",
+      "color": "#7487d8",
+      "borderColor": "#7487d8"
+    },
+    {
+      "class": "icofont-bell-pepper-capsicum",
+      "color": "#161238",
+      "borderColor": "#161238"
+    },
+    {
+      "class": "icofont-bread",
+      "color": "#28398d",
+      "borderColor": "#28398d"
+    },
+    {
+      "class": "icofont-burger",
+      "color": "#7387c3",
+      "borderColor": "#7387c3"
+    },
+    {
+      "class": "icofont-cheese",
+      "color": "#6e758b",
+      "borderColor": "#6e758b"
+    },
+    {
+      "class": "icofont-chicken",
+      "color": "#bcacdb",
+      "borderColor": "#bcacdb"
+    },
+    {
+      "class": "icofont-coffee-mug",
+      "color": "#8e0f62",
+      "borderColor": "#8e0f62"
+    },
+    {
+      "class": "icofont-croissant",
+      "color": "#ff4ddd",
+      "borderColor": "#ff4ddd"
+    },
+    {
+      "class": "icofont-cup-cake",
+      "color": "#6d995c",
+      "borderColor": "#6d995c"
+    },
+    {
+      "class": "icofont-grapes",
+      "color": "#004200",
+      "borderColor": "#004200"
+    },
+    {
+      "class": "icofont-ice-cream-alt",
+      "color": "#fe87ac",
+      "borderColor": "#fe87ac"
+    },
+    {
+      "class": "icofont-mushroom",
+      "color": "#fe8b66",
+      "borderColor": "#fe8b66"
+    }
+  ],
+  "hoverBorderColor": [
+    {
+      "class": "icofont-air-balloon",
+      "color": "#C10087"
+    },
+    {
+      "class": "icofont-airplane",
+      "color": "#912470"
+    },
+    {
+      "class": "icofont-ambulance-crescent",
+      "color": "#7D0057"
+    },
+    {
+      "class": "icofont-articulated-truck",
+      "color": "#E038AD"
+    },
+    {
+      "class": "icofont-auto-rickshaw",
+      "color": "#E065BB"
+    },
+    {
+      "class": "icofont-bicycle-alt-1",
+      "color": "#F30021"
+    },
+    {
+      "class": "icofont-bus-alt-1",
+      "color": "#B62E40"
+    },
+    {
+      "class": "icofont-car-alt-3",
+      "color": "#9E0016"
+    },
+    {
+      "class": "icofont-excavator",
+      "color": "#F93E58"
+    },
+    {
+      "class": "icofont-fork-lift",
+      "color": "#F97083"
+    },
+    {
+      "class": "icofont-helicopter",
+      "color": "#640CAB"
+    },
+    {
+      "class": "icofont-rocket-alt-2",
+      "color": "#582781"
+    },
+    {
+      "class": "icofont-sail-boat",
+      "color": "#3F046F"
+    },
+    {
+      "class": "icofont-tractor",
+      "color": "#9240D5"
+    },
+    {
+      "class": "icofont-train-steam",
+      "color": "#A468D5"
+    },
+    {
+      "class": "icofont-tram",
+      "color": "#739D00"
+    }
+  ],
+  "borderType": [
+    {
+      "class": "icofont-bat",
+      "color": "#1826B0",
+      "type": "solid"
+    },
+    {
+      "class": "icofont-butterfly",
+      "color": "#2E3784",
+      "type": "solid"
+    },
+    {
+      "class": "icofont-camel-alt",
+      "color": "#3C9DD0",
+      "type": "solid"
+    },
+    {
+      "class": "icofont-cat-alt-3",
+      "color": "#081272",
+      "type": "solid"
+    },
+    {
+      "class": "icofont-cow-head",
+      "color": "#4C59D8",
+      "type": "solid"
+    },
+    {
+      "class": "icofont-crab",
+      "color": "#717BD8",
+      "type": "dotted"
+    },
+    {
+      "class": "icofont-dog-alt",
+      "color": "#4C10AE",
+      "type": "dotted"
+    },
+    {
+      "class": "icofont-eaten-fish",
+      "color": "#4B2A82",
+      "type": "dotted"
+    },
+    {
+      "class": "icofont-fish-1",
+      "color": "#2E0571",
+      "type": "dotted"
+    },
+    {
+      "class": "icofont-fox",
+      "color": "#64AAD0",
+      "type": "dotted"
+    },
+    {
+      "class": "icofont-gorilla",
+      "color": "#7C45D6",
+      "type": "dashed"
+    },
+    {
+      "class": "icofont-lemur",
+      "color": "#946BD6",
+      "type": "dashed"
+    },
+    {
+      "class": "icofont-monkey-face",
+      "color": "#086CA2",
+      "type": "dashed"
+    },
+    {
+      "class": "icofont-panda",
+      "color": "#235B79",
+      "type": "dashed"
+    },
+    {
+      "class": "icofont-pelican",
+      "color": "#034569",
+      "type": "dashed"
+    }
+  ],
+  "gradient": [
+    {
+      "class": "icofont-apple",
+      "color": ["#BF3030", "#a65e5c"]
+    },
+    {
+      "class": "icofont-artichoke",
+      "color": ["#a65e5c", "#9e5a75"]
+    },
+    {
+      "class": "icofont-avocado",
+      "color": ["#9e5a75", "#603477"]
+    },
+    {
+      "class": "icofont-banana",
+      "color": ["#603477", "#4c4867"]
+    },
+    {
+      "class": "icofont-beans",
+      "color": ["#4C4867", "#3f21cf"]
+    },
+    {
+      "class": "icofont-beer",
+      "color": ["#3F21CF", "#5088cf"]
+    },
+    {
+      "class": "icofont-birthday-cake",
+      "color": ["#5088CF", "#24CCCF"]
+    },
+    {
+      "class": "icofont-bread",
+      "color": ["#24CCCF", "#5BCFB1"]
+    },
+    {
+      "class": "icofont-burger",
+      "color": ["#5BCFB1", "#8ACF8C"]
+    },
+    {
+      "class": "icofont-carrot",
+      "color": ["#8ACF8C", "#086E09"]
+    },
+    {
+      "class": "icofont-cheese",
+      "color": ["#086E09", "#7CA416"]
+    },
+    {
+      "class": "icofont-cherry",
+      "color": ["#7CA416", "#98A452"]
+    },
+    {
+      "class": "icofont-chicken",
+      "color": ["#98A452", "#A4A435"]
+    },
+    {
+      "class": "icofont-cola",
+      "color": ["#A4A435", "#A49466"]
+    },
+    {
+      "class": "icofont-grapes",
+      "color": ["#A49466", "#A47C33"]
+    },
+    {
+      "class": "icofont-ice-cream-alt",
+      "color": ["#A47C33", "#A44C14"]
+    }
+  ],
+  "shape": [
+    "icofont-badminton-birdie",
+    "icofont-baseball",
+    "icofont-basketball-hoop",
+    "icofont-boot-alt-1",
+    "icofont-bowling-alt",
+    "icofont-result-sport",
+    "icofont-dumbbell",
+    "icofont-football-alt",
+    "icofont-golf-bag",
+    "icofont-golfer",
+    "icofont-gym",
+    "icofont-gym-alt-3",
+    "icofont-hockey-alt",
+    "icofont-olympic",
+    "icofont-racing-flag",
+    "icofont-rugby",
+    "icofont-runner-alt-1",
+    "icofont-table-tennis",
+    "icofont-trophy"
+  ]
+}

@@ -1,0 +1,97 @@
+<tc-card class="mb-0">
+  <tc-table
+    [rows]="payments"
+    [hovered]="true"
+    [pagination]="true"
+    [itemsPerPage]="15"
+  >
+    <tc-table-col [columnTitle]="'Bill NO'" [columnName]="'billNo'" [enableSorting]="true">
+      <ng-template #tableTDTemplate let-value>
+        <span [tcColor]="'#a5a5a5'">{{ value }}</span>
+      </ng-template>
+    </tc-table-col>
+    <tc-table-col [columnTitle]="'Patient'" [columnName]="'patient'" [enableSorting]="true">
+      <ng-template #tableTDTemplate let-value>
+        <strong>{{ value }}</strong>
+      </ng-template>
+    </tc-table-col>
+    <tc-table-col [columnTitle]="'Doctor'" [columnName]="'doctor'" [enableSorting]="true">
+      <ng-template #tableTDTemplate let-value>
+        <strong>{{ value }}</strong>
+      </ng-template>
+    </tc-table-col>
+    <tc-table-col [columnTitle]="'Date'" [columnName]="'billDate'" [enableSorting]="true">
+      <ng-template #tableTDTemplate let-value>
+        <span class="nowrap" [tcColor]="'#a5a5a5'">{{ value }}</span>
+      </ng-template>
+    </tc-table-col>
+    <tc-table-col [columnTitle]="'Charges'" [columnName]="'charges'" [enableSorting]="true"></tc-table-col>
+    <tc-table-col [columnTitle]="'Tax'" [columnName]="'tax'" [enableSorting]="true"></tc-table-col>
+    <tc-table-col [columnTitle]="'Discount'" [columnName]="'discount'" [enableSorting]="true"></tc-table-col>
+    <tc-table-col [columnTitle]="'Total'" [columnName]="'total'" [enableSorting]="true">
+      <ng-template #tableTDTemplate let-value>
+        <strong>{{ value }}</strong>
+      </ng-template>
+    </tc-table-col>
+  </tc-table>
+</tc-card>
+
+<div class="add-action-box">
+  <button
+    tc-button
+    [afterIcon]="'icofont-plus'"
+    [view]="'accent'"
+    [square]="true"
+    [tcShape]="500"
+    (click)="openModal(modalBody, 'Add payment', modalFooter)"
+  ></button>
+</div>
+
+<!-- Modal window -->
+<ng-container>
+  <ng-template #modalBody>
+    <form [formGroup]="paymentForm" novalidate>
+      <tc-form-group>
+        <tc-input [placeholder]="'Bill NO'" formControlName="billNo"></tc-input>
+      </tc-form-group>
+
+      <tc-form-group>
+        <tc-input [placeholder]="'Patient'" formControlName="patient"></tc-input>
+      </tc-form-group>
+
+      <tc-form-group>
+        <tc-autocomplete [placeholder]="'Doctor'" [data]="doctors" [key]="'name'" formControlName="doctor"></tc-autocomplete>
+      </tc-form-group>
+
+      <tc-form-group>
+        <tc-input [placeholder]="'Date'" formControlName="billDate"></tc-input>
+      </tc-form-group>
+
+      <tc-form-group>
+        <tc-input [placeholder]="'Charges'" formControlName="charges"></tc-input>
+      </tc-form-group>
+
+      <tc-form-group>
+        <tc-input [placeholder]="'Tax'" formControlName="tax"></tc-input>
+      </tc-form-group>
+
+      <tc-form-group>
+        <tc-input [placeholder]="'Discount'" formControlName="discount"></tc-input>
+      </tc-form-group>
+
+      <tc-form-group class="mb-0">
+        <tc-input [placeholder]="'Total'" formControlName="total"></tc-input>
+      </tc-form-group>
+    </form>
+  </ng-template>
+
+  <ng-template #modalFooter>
+    <div class="actions justify-content-between">
+      <button tc-button [type]="'button'" [view]="'error'" (click)="closeModal()">Cancel</button>
+      <button tc-button [view]="'info'" [disabled]="paymentForm.invalid" (click)="addPayment(paymentForm)">
+        Add payment
+      </button>
+    </div>
+  </ng-template>
+</ng-container>
+<!-- end Modal window -->

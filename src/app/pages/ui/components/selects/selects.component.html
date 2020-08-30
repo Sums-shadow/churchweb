@@ -1,0 +1,400 @@
+<ng-container *ngIf="data">
+  <div class="row">
+    <div class="col-12 col-md-6">
+      <tc-card [title]="'Single'">
+        <tc-select [placeholder]="'Select placeholder'" [options]="data"></tc-select>
+      </tc-card>
+    </div>
+
+    <div class="col-12 col-md-6">
+      <tc-card [title]="'Multiple'">
+        <tc-select [placeholder]="'Select placeholder'" [options]="data" [multiple]="true"></tc-select>
+      </tc-card>
+    </div>
+  </div>
+
+  <tc-card [title]="'Selected option'">
+    <div class="row">
+      <div class="col-12 col-md-6 mb-3 mb-md-0">
+        <tc-select [placeholder]="'Select placeholder'" [options]="data" [selected]="'europe'"></tc-select>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <tc-select
+          [placeholder]="'Select placeholder'"
+          [options]="data"
+          [selected]="['northAmerica', 'southAmerica']"
+          [multiple]="true"
+        ></tc-select>
+      </div>
+    </div>
+  </tc-card>
+
+  <tc-card [title]="'With clear button'">
+    <div class="row">
+      <div class="col-12 col-md-6 mb-3 mb-md-0">
+        <tc-select
+          [placeholder]="'Select placeholder'"
+          [options]="data"
+          [selected]="'europe'"
+          [allowClear]="true"
+        ></tc-select>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <tc-select
+          [placeholder]="'Select placeholder'"
+          [options]="data"
+          [selected]="['northAmerica']"
+          [multiple]="true"
+          [allowClear]="true"
+        ></tc-select>
+      </div>
+    </div>
+  </tc-card>
+
+  <tc-card [title]="'With options filter'">
+    <div class="row">
+      <div class="col-12 col-md-6 mb-3 mb-md-0">
+        <tc-select
+          [placeholder]="'Select placeholder'"
+          [options]="data"
+          [selected]="'europe'"
+          [filter]="true"
+        ></tc-select>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <tc-select
+          [placeholder]="'Select placeholder'"
+          [options]="data"
+          [selected]="['europe', 'africa', 'asia']"
+          [multiple]="true"
+          [filter]="true"
+        ></tc-select>
+      </div>
+    </div>
+  </tc-card>
+
+  <tc-card [title]="'Shape'">
+    <div class="row">
+      <div class="col-12 col-md-6 mb-3 mb-md-0">
+        <tc-form-group>
+          <tc-select
+            [placeholder]="'Square'"
+            [options]="data"
+            [tcShape]="0"
+          ></tc-select>
+        </tc-form-group>
+
+        <tc-form-group>
+          <tc-select
+            [placeholder]="'Default'"
+            [options]="data"
+          ></tc-select>
+        </tc-form-group>
+
+        <tc-select
+          [placeholder]="'Rounded'"
+          [options]="data"
+          [tcShape]="5"
+        ></tc-select>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <tc-form-group>
+          <tc-select
+            [placeholder]="'Square'"
+            [options]="data"
+            [tcShape]="0"
+            [multiple]="true"
+          ></tc-select>
+        </tc-form-group>
+
+        <tc-form-group>
+          <tc-select
+            [placeholder]="'Default'"
+            [options]="data"
+            [multiple]="true"
+          ></tc-select>
+        </tc-form-group>
+
+        <tc-select
+          [placeholder]="'Rounded'"
+          [options]="data"
+          [tcShape]="5"
+          [multiple]="true"
+        ></tc-select>
+      </div>
+    </div>
+  </tc-card>
+
+  <tc-card [title]="'Size'">
+    <div class="row">
+      <div class="col-12 col-md-6 mb-3 mb-md-0">
+        <tc-form-group>
+          <tc-select
+            [placeholder]="'Small size'"
+            [options]="data"
+            [size]="'sm'"
+          ></tc-select>
+        </tc-form-group>
+
+        <tc-form-group>
+          <tc-select
+            [placeholder]="'Default size'"
+            [options]="data"
+          ></tc-select>
+        </tc-form-group>
+
+        <tc-select
+          [placeholder]="'Large size'"
+          [options]="data"
+          [size]="'lg'"
+        ></tc-select>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <tc-form-group>
+          <tc-select
+            [placeholder]="'Small size'"
+            [options]="data"
+            [size]="'sm'"
+            [multiple]="true"
+          ></tc-select>
+        </tc-form-group>
+
+        <tc-form-group>
+          <tc-select
+            [placeholder]="'Default size'"
+            [options]="data"
+            [multiple]="true"
+          ></tc-select>
+        </tc-form-group>
+
+        <tc-select
+          [placeholder]="'Large size'"
+          [options]="data"
+          [size]="'lg'"
+          [multiple]="true"
+        ></tc-select>
+      </div>
+    </div>
+  </tc-card>
+
+  <tc-card [title]="'Disabled'">
+    <div class="row">
+      <div class="col-12 col-md-6 mb-3 mb-md-0">
+        <tc-select
+          [placeholder]="'Select placeholder'"
+          [options]="data"
+          [selected]="'europe'"
+          [disabled]="true"
+        ></tc-select>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <tc-select
+          [placeholder]="'Select placeholder'"
+          [options]="data"
+          [selected]="['northAmerica', 'southAmerica']"
+          [multiple]="true"
+          [disabled]="true"
+        ></tc-select>
+      </div>
+    </div>
+  </tc-card>
+
+  <tc-card [title]="'Custom styles'">
+    <div class="row">
+      <div class="col-12 col-md-6 mb-3 mb-md-0">
+        <tc-form-group>
+          <tc-form-label>Custom control style</tc-form-label>
+
+          <tc-select
+            [color]="['#fff', '#fff', '#336cfb']"
+            [borderColor]="['#336cfb', '#2759fa', '#2759fa']"
+            [bgColor]="['#336cfb', '#2759fa','#fff']"
+            [placeholder]="'Select placeholder'"
+            [options]="data"
+            [selected]="'europe'"
+          ></tc-select>
+        </tc-form-group>
+
+        <tc-form-group>
+          <tc-form-label>Custom list style</tc-form-label>
+
+          <tc-select
+            [color]="['#fff', '#fff', '#64B5F6']"
+            [borderColor]="['#64B5F6', '#569cd4', '#569cd4']"
+            [bgColor]="['#64B5F6', '#569cd4','#fff']"
+            [listBgColor]="'#64B5F6'"
+            [listBorderColor]="'#64B5F6'"
+            [listColor]="'#fff'"
+            [placeholder]="'Select placeholder'"
+            [options]="data"
+            [selected]="'asia'"
+          ></tc-select>
+        </tc-form-group>
+
+        <tc-form-group class="mb-0">
+          <tc-form-label>Custom list highlight style</tc-form-label>
+
+          <tc-select
+            [color]="['#fff', '#fff', '#ed5564']"
+            [borderColor]="['#ed5564', '#bc434f', '#bc434f']"
+            [bgColor]="['#ed5564', '#bc434f','#fff']"
+            [listHighlightBgColor]="'#fcd4d7'"
+            [listHighlightTextColor]="'#ed5564'"
+            [placeholder]="'Select placeholder'"
+            [options]="data"
+            [selected]="'africa'"
+          ></tc-select>
+        </tc-form-group>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <tc-form-group>
+          <tc-form-label>Custom control style</tc-form-label>
+
+          <tc-select
+            [color]="['#000', '#fff', '#fff']"
+            [borderColor]="['#b7ce63', '#b7ce63', '#8fa14d']"
+            [bgColor]="['#fff', '#b7ce63','#8fa14d']"
+            [placeholder]="'Select placeholder'"
+            [options]="data"
+            [selected]="['australia']"
+            [multiple]="true"
+          ></tc-select>
+        </tc-form-group>
+
+        <tc-form-group>
+          <tc-form-label>Custom list style</tc-form-label>
+
+          <tc-select
+            [color]="['#000', '#000', '#fff']"
+            [borderColor]="['#e9e165', '#e9e165', '#a29c46']"
+            [bgColor]="['#fff', '#e9e165','#a29c46']"
+            [listBgColor]="'#e9e165'"
+            [listBorderColor]="'#a29c46'"
+            [listColor]="'#1f1e0d'"
+            [placeholder]="'Select placeholder'"
+            [options]="data"
+            [selected]="['northAmerica', 'southAmerica']"
+            [multiple]="true"
+          ></tc-select>
+        </tc-form-group>
+
+        <tc-form-group class="mb-0">
+          <tc-form-label>Custom list highlight style</tc-form-label>
+
+          <tc-select
+            [color]="['#c8177f', '#fff', '#fff']"
+            [borderColor]="['#c8177f', '#c8177f', '#91115c']"
+            [bgColor]="['#fff', '#c8177f','#91115c']"
+            [listBgColor]="'#91115c'"
+            [listBorderColor]="'#91115c'"
+            [listColor]="'#fff'"
+            [listHighlightBgColor]="'#c843b9'"
+            [listHighlightTextColor]="'#fff'"
+            [placeholder]="'Select placeholder'"
+            [options]="data"
+            [selected]="'africa'"
+            [multiple]="true"
+          ></tc-select>
+        </tc-form-group>
+      </div>
+    </div>
+  </tc-card>
+
+  <tc-card [title]="'Option template'">
+    <div class="row">
+      <div class="col-12 col-md-6 mb-3 mb-md-0">
+        <tc-select
+          [placeholder]="'Select placeholder'"
+          [options]="data"
+          [selected]="'europe'"
+        >
+          <ng-template #optionTemplate let-option="option" let-index="index">
+            <span class="{{ icons[index] }} mr-1"></span> {{ option.label }}
+          </ng-template>
+        </tc-select>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <tc-select
+          [placeholder]="'Select placeholder'"
+          [options]="data"
+          [selected]="['northAmerica', 'asia']"
+          [multiple]="true"
+        >
+          <ng-template #optionTemplate let-option="option" let-index="index">
+            <strong>{{ option.label }}</strong> - {{ countries[index] }}
+          </ng-template>
+        </tc-select>
+      </div>
+    </div>
+  </tc-card>
+
+  <tc-card [title]="'Forms'" class="mb-0">
+    <div class="row">
+      <div class="col-12 col-md-6 mb-4 mb-md-0">
+        <form [formGroup]="reactiveForm" novalidate>
+          <tc-form-label>Reactive form</tc-form-label>
+
+          <tc-form-group>
+            <tc-select
+              [placeholder]="'Select placeholder'"
+              [options]="data"
+              formControlName="singleSelect"
+            ></tc-select>
+          </tc-form-group>
+
+          <tc-form-group>
+            <tc-select
+              [placeholder]="'Select placeholder'"
+              [options]="data"
+              formControlName="multipleSelect"
+              [multiple]="true"
+            ></tc-select>
+          </tc-form-group>
+        </form>
+
+        <tc-form-group>
+          <tc-input [readonly]="true" [(ngModel)]="reactiveForm.value.singleSelect"></tc-input>
+        </tc-form-group>
+
+        <tc-input [readonly]="true" [(ngModel)]="reactiveForm.value.multipleSelect"></tc-input>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <tc-form-label>Template driven form</tc-form-label>
+
+        <tc-form-group>
+          <tc-select
+            [placeholder]="'Select placeholder'"
+            [options]="data"
+            #templateForm
+            [ngModel]="'europe'"
+          ></tc-select>
+        </tc-form-group>
+
+        <tc-form-group>
+          <tc-select
+            [placeholder]="'Select placeholder'"
+            [options]="data"
+            #multipleTemplateForm
+            [ngModel]="['africa', 'asia']"
+            [multiple]="true"
+          ></tc-select>
+        </tc-form-group>
+
+        <tc-form-group>
+          <tc-input [readonly]="true" [(ngModel)]="templateForm.value"></tc-input>
+        </tc-form-group>
+
+        <tc-input [readonly]="true" [(ngModel)]="multipleTemplateForm.value"></tc-input>
+      </div>
+    </div>
+  </tc-card>
+</ng-container>

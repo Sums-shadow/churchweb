@@ -1,0 +1,158 @@
+<tc-card [title]="'Default icons'">
+  <div class="icons-list">
+    <tc-icon
+      *ngFor="let icon of defaultIcons"
+      [iconClass]="icon"
+    ></tc-icon>
+  </div>
+</tc-card>
+
+<tc-card [title]="'Icons size'">
+  <div class="icons-list">
+    <tc-icon
+      *ngFor="let icon of defaultIcons"
+      [iconClass]="icon"
+      [tcFontSize]="10"
+    ></tc-icon>
+  </div>
+
+  <div class="icons-list">
+    <tc-icon
+      *ngFor="let icon of defaultIcons"
+      [iconClass]="icon"
+      [tcFontSize]="20"
+    ></tc-icon>
+  </div>
+
+  <div class="icons-list">
+    <tc-icon
+      *ngFor="let icon of defaultIcons"
+      [iconClass]="icon"
+      [tcFontSize]="30"
+    ></tc-icon>
+  </div>
+</tc-card>
+
+<tc-card [title]="'Icons color'">
+  <div class="icons-list">
+    <tc-icon
+      *ngFor="let icon of iconsColor"
+      [iconClass]="icon.class"
+      [tcColor]="icon.color"
+      [tcFontSize]="20"
+    ></tc-icon>
+  </div>
+
+  <div class="icons-list">
+    <tc-icon
+      *ngFor="let icon of iconsHoverColor"
+      [iconClass]="icon.class"
+      [tcColor]="[icon.color[0], icon.color[1]]"
+      [tcFontSize]="30"
+    ></tc-icon>
+  </div>
+</tc-card>
+
+<tc-card [title]="'Icons background color'">
+  <div class="icons-list list-indents">
+    <tc-icon
+      *ngFor="let icon of iconsBgColor"
+      [iconClass]="icon.class"
+      [tcBgColor]="icon.color"
+      [tcColor]="'#fff'"
+      [tcFontSize]="30"
+    ></tc-icon>
+  </div>
+
+  <div class="icons-list list-indents">
+    <tc-icon
+      *ngFor="let icon of iconsHoverBgColor"
+      [iconClass]="icon.class"
+      [tcBgColor]="[icon.color[0], icon.color[1]]"
+      [tcFontSize]="30"
+    ></tc-icon>
+  </div>
+</tc-card>
+
+<tc-card [title]="'Icons border color'">
+  <div class="icons-list list-indents">
+    <tc-icon
+      *ngFor="let icon of iconsBorderColor"
+      [iconClass]="icon.class"
+      [tcColor]="icon.color"
+      [tcBorderColor]="icon.color"
+      [tcFontSize]="20"
+    ></tc-icon>
+  </div>
+
+  <div class="icons-list list-indents">
+    <tc-icon
+      *ngFor="let icon of iconsHoverBorderColor"
+      [iconClass]="icon.class"
+      [tcColor]="[icon.color, '#fff']"
+      [tcBorderColor]="icon.color"
+      [tcBgColor]="['', icon.color]"
+      [tcFontSize]="20"
+    ></tc-icon>
+  </div>
+
+  <div class="icons-list list-indents">
+    <tc-icon
+      *ngFor="let icon of iconsBorderType"
+      [iconClass]="icon.class"
+      [tcColor]="icon.color"
+      [tcBorderColor]="icon.color"
+      [tcBorderStyle]="icon.type"
+      [tcFontSize]="25"
+    ></tc-icon>
+  </div>
+</tc-card>
+
+<tc-card [title]="'Icons background gradient'">
+  <div class="icons-list list-indents">
+    <tc-icon
+      *ngFor="let icon of iconsGradient"
+      [iconClass]="icon.class"
+      [tcGradient]="[icon.color[0], icon.color[1]]"
+      [tcColor]="'#ffebdf'"
+      [tcFontSize]="30"
+    ></tc-icon>
+  </div>
+</tc-card>
+
+<tc-card [title]="'Icons shape'" class="mb-0">
+  <div class="icons-list list-indents">
+    <tc-icon
+      *ngFor="let icon of iconsShape"
+      [iconClass]="icon"
+      [tcShape]="'50%'"
+      [tcColor]="'#dadada'"
+      [tcBgColor]="'#666666'"
+      [tcBorderColor]="'#666666'"
+      [tcFontSize]="20"
+    ></tc-icon>
+  </div>
+
+  <div class="icons-list list-indents">
+    <tc-icon
+      *ngFor="let icon of iconsShape"
+      [iconClass]="icon"
+      [tcShape]="6"
+      [tcColor]="'#000'"
+      [tcBorderColor]="'#000'"
+      [tcFontSize]="20"
+    ></tc-icon>
+  </div>
+
+  <div class="icons-list list-indents">
+    <tc-icon
+      *ngFor="let icon of iconsShape"
+      [iconClass]="icon"
+      [tcShape]="0"
+      [tcColor]="'#fff'"
+      [tcBorderColor]="'#000'"
+      [tcBgColor]="'#000'"
+      [tcFontSize]="20"
+    ></tc-icon>
+  </div>
+</tc-card>

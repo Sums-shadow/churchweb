@@ -1,0 +1,13 @@
+@import '~src/assets/sass/variables';
+
+:host {
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -($module-rem / 2);
+
+    .tc-badge {
+      margin: $module-rem / 2;
+    }
+  }
+}

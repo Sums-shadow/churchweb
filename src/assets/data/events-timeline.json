@@ -1,0 +1,74 @@
+[
+  {
+    "sectionLabel": {
+      "text": "Events",
+      "view": "error"
+    },
+    "sectionData": [
+      {
+        "date": "2m ago",
+        "title": "Appointment",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate.",
+        "icon": "icofont-doctor-alt",
+        "iconBg": "#64B5F6",
+        "iconColor": "#fff"
+      },
+      {
+        "date": "2h ago",
+        "title": "Medication",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur nam nisi veniam.",
+        "icon": "icofont-drug",
+        "iconBg": "#ED6C9C",
+        "iconColor": "#fff"
+      },
+      {
+        "date": "Feb 25",
+        "title": "Appointment",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate.",
+        "icon": "icofont-ambulance-cross",
+        "iconBg": "#5fbf5e",
+        "iconColor": "#fff"
+      },
+      {
+        "date": "Feb 20",
+        "title": "Medication",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur nam nisi veniam.",
+        "icon": "icofont-blood",
+        "iconBg": "#8486ce",
+        "iconColor": "#fff"
+      }
+    ]
+  },
+  {
+    "sectionLabel": {
+      "text": "Meetings",
+      "view": "success"
+    },
+    "sectionData": [
+      {
+        "date": "Feb 15",
+        "title": "New patient",
+        "content": "Lorem ipsum dolor sit.",
+        "icon": "icofont-paralysis-disability",
+        "iconBg": "#e9e165",
+        "iconColor": "#000"
+      },
+      {
+        "date": "Feb 14",
+        "title": "Examination",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur nam nisi veniam.",
+        "icon": "icofont-stethoscope-alt",
+        "iconBg": "#CE8557",
+        "iconColor": ""
+      },
+      {
+        "date": "Feb 13",
+        "title": "New patient",
+        "content": "Lorem ipsum dolor sit.",
+        "icon": "icofont-xray",
+        "iconBg": "#e0723e",
+        "iconColor": "#fff"
+      }
+    ]
+  }
+]

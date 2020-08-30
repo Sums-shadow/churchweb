@@ -1,0 +1,11 @@
+:host {
+  .icons-list {
+    &.list-indents {
+      margin: -.5rem;
+
+      .tc-icon {
+        margin: .5rem;
+      }
+    }
+  }
+}

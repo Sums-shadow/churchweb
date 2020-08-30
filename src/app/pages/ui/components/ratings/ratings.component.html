@@ -1,0 +1,124 @@
+<div class="row">
+	<div class="col-12 col-md-6">
+		<tc-card [title]="'Default'">
+			<tc-rating></tc-rating>
+		</tc-card>
+	</div>
+
+	<div class="col-12 col-md-6">
+		<tc-card [title]="'With current value'">
+			<tc-rating [value]="4"></tc-rating>
+		</tc-card>
+	</div>
+
+  <div class="col-12 col-md-6">
+    <tc-card [title]="'Disabled'">
+      <tc-rating [value]="3" [disabled]="true"></tc-rating>
+    </tc-card>
+  </div>
+
+  <div class="col-12 col-md-6">
+    <tc-card [title]="'Numbered'">
+      <tc-rating [value]="4" [view]="'number'"></tc-rating>
+    </tc-card>
+  </div>
+
+	<div class="col-12 col-md-6">
+		<tc-card [title]="'Custom icons'">
+			<tc-form-group>
+				<tc-rating [iconClass]="'icofont-badge'" [value]="3"></tc-rating>
+			</tc-form-group>
+
+			<tc-form-group>
+				<tc-rating [iconClass]="'icofont-diamond'" [value]="4"></tc-rating>
+			</tc-form-group>
+
+			<tc-form-group class="mb-0">
+				<tc-rating [iconClass]="'icofont-check-circled'" [value]="2"></tc-rating>
+			</tc-form-group>
+		</tc-card>
+	</div>
+
+  <div class="col-12 col-md-6">
+    <tc-card [title]="'Custom items count'">
+      <tc-form-group>
+        <tc-rating [iconClass]="'icofont-lemon-alt'" [iconsNumber]="2" [value]="1"></tc-rating>
+      </tc-form-group>
+
+      <tc-form-group>
+        <tc-rating [iconClass]="'icofont-burger'" [iconsNumber]="6" [value]="4"></tc-rating>
+      </tc-form-group>
+
+      <tc-form-group class="mb-0">
+        <tc-rating [iconClass]="'icofont-water-drop'" [iconsNumber]="10" [value]="3"></tc-rating>
+      </tc-form-group>
+    </tc-card>
+  </div>
+
+	<div class="col-12 col-md-6">
+		<tc-card [title]="'Custom color'">
+			<tc-form-group>
+				<tc-rating
+					[value]="3"
+					[color]="['#ccc', '#64B5F6', '#336cfb']"
+				></tc-rating>
+			</tc-form-group>
+
+			<tc-form-group>
+				<tc-rating
+					[value]="4"
+					[color]="['#feb988','#d18132','#52280f']"
+				></tc-rating>
+			</tc-form-group>
+
+			<tc-form-group class="mb-0">
+				<tc-rating
+					[value]="3"
+					[color]="['#d3dcb2','#a7bb5f','#b7ce63']"
+				></tc-rating>
+			</tc-form-group>
+		</tc-card>
+	</div>
+
+  <div class="col-12 col-md-6">
+    <tc-card [title]="'Custom items size'">
+      <tc-form-group>
+        <tc-rating [value]="1" [tcFontSize]="10"></tc-rating>
+      </tc-form-group>
+
+      <tc-form-group>
+        <tc-rating [value]="4"></tc-rating>
+      </tc-form-group>
+
+      <tc-form-group class="mb-0">
+        <tc-rating [value]="3" [tcFontSize]="34"></tc-rating>
+      </tc-form-group>
+    </tc-card>
+  </div>
+</div>
+
+<tc-card [title]="'Forms'" class="mb-0">
+	<div class="row">
+		<div class="col-12 col-md-6 mb-4 mb-md-0">
+			<form [formGroup]="reactiveForm" novalidate>
+				<tc-form-group>
+					<tc-form-label>Reactive form</tc-form-label>
+
+					<tc-rating formControlName="ratingField"></tc-rating>
+				</tc-form-group>
+			</form>
+
+			<tc-input [readonly]="true" [(ngModel)]="reactiveForm.value.ratingField"></tc-input>
+		</div>
+
+		<div class="col-12 col-md-6">
+			<tc-form-group>
+				<tc-form-label>Template driven form</tc-form-label>
+
+				<tc-rating #templateForm [ngModel]="8" [iconsNumber]="10"></tc-rating>
+			</tc-form-group>
+
+			<tc-input [readonly]="true" [(ngModel)]="templateForm.value"></tc-input>
+		</div>
+	</div>
+</tc-card>

@@ -1,0 +1,61 @@
+<div class="row">
+  <div class="col-12 col-md-6">
+    <p [tcColor]="'#a5a5a5'" class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, dolorem excepturi facilis magni necessitatibus
+      perspiciatis repellendus sunt veniam? A ad architecto aspernatur cupiditate dignissimos distinctio earum, eligendi eum
+      iusto laboriosam maxime minima necessitatibus nemo nesciunt odio perferendis, quaerat qui quo repellendus sapiente.</p>
+  </div>
+  <div class="col-12 col-md-6">
+    <tc-card [tcBgColor]="'#1f2022'" [tcColor]="'#fff'">
+      <div class="row text-center">
+        <div class="col-6">
+          <div>Amount received</div>
+          <strong [tcFontSize]="20" [tcColor]="'#00c896'">$35,570</strong>
+        </div>
+
+        <div class="col-6">
+          <div>Amount pending</div>
+          <strong [tcFontSize]="20" [tcColor]="'#ed5564'">$2,540</strong>
+        </div>
+      </div>
+    </tc-card>
+  </div>
+</div>
+
+<tc-card class="mb-0" *ngIf="invoices">
+  <tc-table
+    [rows]="invoices"
+    [hovered]="true"
+    [pagination]="true"
+    [itemsPerPage]="12"
+  >
+    <tc-table-col [columnTitle]="'#'" [columnName]="'icon'">
+      <ng-template #tableTDTemplate let-value>
+        <span class="{{ value }}" [tcFontSize]="50" [tcColor]="'#1f2022'"></span>
+      </ng-template>
+    </tc-table-col>
+    <tc-table-col [columnTitle]="'Date'" [columnName]="'date'" [enableSorting]="true">
+      <ng-template #tableTDTemplate let-value>
+        <span [tcColor]="'#a5a5a5'" class="nowrap"><i class="icofont-clock-time"></i> {{ value }}</span>
+      </ng-template>
+    </tc-table-col>
+    <tc-table-col [columnTitle]="'Recipient'" [columnName]="'recipient'">
+      <ng-template #tableTDTemplate let-value>
+        <strong>{{ value }}</strong>
+      </ng-template>
+    </tc-table-col>
+    <tc-table-col [columnTitle]="'Status'" [columnName]="'status'">
+      <ng-template #tableTDTemplate let-value>
+        <span class="nowrap" [tcColor]="'#00c896'" *ngIf="value === 'Paid'">
+          <i class="icofont-check-circled"></i> {{ value }}
+        </span>
+        <span class="nowrap" [tcColor]="'#ed5564'" *ngIf="value === 'Un-Paid'">
+          <i class="icofont-close-circled"></i> {{ value }}
+        </span>
+        <span class="nowrap" [tcColor]="'#626364'" *ngIf="value === 'Scheduled'">
+          <i class="icofont-wall-clock"></i> {{ value }}
+        </span>
+      </ng-template>
+    </tc-table-col>
+    <tc-table-col [columnTitle]="'Amount'" [columnName]="'amount'" [enableSorting]="true"></tc-table-col>
+  </tc-table>
+</tc-card>

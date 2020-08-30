@@ -1,0 +1,7 @@
+<h2 class="h4 mt-0 mb-1">Login form</h2>
+<p [tcColor]="'#8f8f90'">Login to access your Account</p>
+
+<login-form></login-form>
+
+<p class="mt-5 mb-1"><a (click)="$event.preventDefault()" href="#">Forgot password?</a></p>
+<p>Don't have an account? <a [routerLink]="['../', 'sign-up']">Sign up!</a></p>

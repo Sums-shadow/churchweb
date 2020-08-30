@@ -1,0 +1,254 @@
+<div class="row">
+  <div class="col-12 col-md-4">
+    <tc-card [title]="'Reactive form'">
+      <form [formGroup]="firstForm" novalidate>
+        <tc-form-group>
+          <tc-input formControlName="name" [placeholder]="'Type your name'"></tc-input>
+        </tc-form-group>
+
+        <tc-form-group>
+          <tc-select formControlName="continent" [placeholder]="'Select your continent'" [options]="selectData"></tc-select>
+        </tc-form-group>
+
+        <button tc-button>Send form</button>
+      </form>
+    </tc-card>
+  </div>
+
+  <div class="col-12 col-md-4">
+    <tc-card [title]="'Template form'">
+      <form>
+        <tc-form-group>
+          <tc-input [placeholder]="'Type your name'" ngModel #templateName [name]="templateName"></tc-input>
+        </tc-form-group>
+
+        <tc-form-group>
+          <tc-autocomplete
+            [data]="autocompleteData"
+            [key]="'country'"
+            [value]="'Ukraine'"
+            [placeholder]="'Type your country'"
+            [name]="templateCountry"
+            ngModel
+            #templateCountry
+          ></tc-autocomplete>
+        </tc-form-group>
+
+        <button tc-button [block]="true" [view]="'success'">
+          Send form
+        </button>
+      </form>
+    </tc-card>
+  </div>
+
+  <div class="col-12 col-md-4">
+    <tc-card [title]="'Without submit button'">
+      <form [formGroup]="secondForm" novalidate>
+        <tc-form-group>
+          <tc-input
+            formControlName="field1"
+            [placeholder]="'Required field'"
+            (keydown.enter)="sendSecondForm(secondForm); $event.preventDefault()"
+          ></tc-input>
+        </tc-form-group>
+
+        <tc-form-group class="mb-0">
+          <tc-textarea
+            formControlName="field2"
+            [placeholder]="'Not required field'"
+            [height]="100"
+            (keydown.enter)="sendSecondForm(secondForm); $event.preventDefault()"
+          ></tc-textarea>
+        </tc-form-group>
+      </form>
+    </tc-card>
+  </div>
+
+  <div class="col-12 col-md-6">
+    <tc-card [title]="'With labels'">
+      <tc-form-group>
+        <tc-form-label>First name</tc-form-label>
+
+        <tc-input></tc-input>
+      </tc-form-group>
+
+      <tc-form-group>
+        <tc-form-label>Last name</tc-form-label>
+
+        <tc-input></tc-input>
+      </tc-form-group>
+
+      <tc-form-group>
+        <tc-form-label>Email</tc-form-label>
+
+        <tc-input [type]="'email'"></tc-input>
+      </tc-form-group>
+
+      <tc-form-group>
+        <tc-form-label>Password</tc-form-label>
+
+        <tc-input [type]="'password'"></tc-input>
+      </tc-form-group>
+
+      <button tc-button [tcBgColor]="'#0738fc'">Send form</button>
+    </tc-card>
+  </div>
+
+  <div class="col-12 col-md-6">
+    <tc-card [title]="'Without labels'">
+      <tc-form-group>
+        <tc-input [placeholder]="'First name'"></tc-input>
+      </tc-form-group>
+
+      <tc-form-group>
+        <tc-input [placeholder]="'Last name'"></tc-input>
+      </tc-form-group>
+
+      <tc-form-group>
+        <tc-input [placeholder]="'Email'" [type]="'email'"></tc-input>
+      </tc-form-group>
+
+      <tc-form-group>
+        <tc-input [placeholder]="'Password'"></tc-input>
+      </tc-form-group>
+
+      <tc-form-group>
+        <tc-textarea [placeholder]="'Comment'" [height]="'8rem'"></tc-textarea>
+      </tc-form-group>
+
+      <button tc-button [block]="true">Send form</button>
+    </tc-card>
+  </div>
+
+  <div class="col-12 col-md-6">
+    <tc-card [title]="'Horizontal'">
+      <tc-form-group>
+        <div class="row align-items-center">
+          <div class="col-12 col-md-4">
+            <tc-form-label class="mb-md-0">First name</tc-form-label>
+          </div>
+          <div class="col-12 col-md-8">
+            <tc-input [placeholder]="'First name'"></tc-input>
+          </div>
+        </div>
+      </tc-form-group>
+
+      <tc-form-group>
+        <div class="row align-items-center">
+          <div class="col-12 col-md-4">
+            <tc-form-label class="mb-md-0">Last name</tc-form-label>
+          </div>
+          <div class="col-12 col-md-8">
+            <tc-input [placeholder]="'Last name'"></tc-input>
+          </div>
+        </div>
+      </tc-form-group>
+
+      <tc-form-group>
+        <div class="row align-items-center">
+          <div class="col-12 col-md-4">
+            <tc-form-label class="mb-md-0">Email</tc-form-label>
+          </div>
+          <div class="col-12 col-md-8">
+            <tc-input [placeholder]="'Email'" [type]="'email'"></tc-input>
+          </div>
+        </div>
+      </tc-form-group>
+
+      <tc-form-group>
+        <div class="row align-items-center">
+          <div class="col-12 col-md-4">
+            <tc-form-label class="mb-md-0">Password</tc-form-label>
+          </div>
+          <div class="col-12 col-md-8">
+            <tc-input [placeholder]="'Password'"></tc-input>
+          </div>
+        </div>
+      </tc-form-group>
+
+      <button tc-button [block]="true" [outline]="true">Send form</button>
+    </tc-card>
+  </div>
+
+  <div class="col-12 col-md-6">
+    <tc-card [title]="'Horizontal with icons'">
+      <tc-form-group>
+        <div class="row align-items-center">
+          <div class="col-12 col-md-4 text-md-right">
+            <tc-form-label class="mb-md-0">First name:</tc-form-label>
+          </div>
+          <div class="col-12 col-md-8">
+            <tc-input [prefixIcon]="'icofont-id'"></tc-input>
+          </div>
+        </div>
+      </tc-form-group>
+
+      <tc-form-group>
+        <div class="row align-items-center">
+          <div class="col-12 col-md-4 text-md-right">
+            <tc-form-label class="mb-md-0">Last name:</tc-form-label>
+          </div>
+          <div class="col-12 col-md-8">
+            <tc-input [prefixIcon]="'icofont-invisible'"></tc-input>
+          </div>
+        </div>
+      </tc-form-group>
+
+      <tc-form-group>
+        <div class="row align-items-center">
+          <div class="col-12 col-md-4 text-md-right">
+            <tc-form-label class="mb-md-0">Email:</tc-form-label>
+          </div>
+          <div class="col-12 col-md-8">
+            <tc-input [type]="'email'" [prefixIcon]="'icofont-at'"></tc-input>
+          </div>
+        </div>
+      </tc-form-group>
+
+      <tc-form-group>
+        <div class="row align-items-center">
+          <div class="col-12 col-md-4 text-md-right">
+            <tc-form-label class="mb-md-0">Password:</tc-form-label>
+          </div>
+          <div class="col-12 col-md-8">
+            <tc-input [prefixIcon]="'icofont-key'"></tc-input>
+          </div>
+        </div>
+      </tc-form-group>
+
+      <button tc-button [block]="true" [view]="'info'" [beforeIcon]="'icofont-location-arrow'">Send form</button>
+    </tc-card>
+  </div>
+</div>
+
+<tc-card [title]="'Inline'" class="mb-0">
+  <div class="row">
+    <div class="col-12 col-md-3">
+      <tc-form-group class="mb-md-0">
+        <tc-input [placeholder]="'First name'"></tc-input>
+      </tc-form-group>
+    </div>
+    <div class="col-12 col-md-3">
+      <tc-form-group class="mb-md-0">
+        <tc-input [placeholder]="'Email'" [type]="'email'"></tc-input>
+      </tc-form-group>
+    </div>
+    <div class="col-12 col-md-3">
+      <tc-form-group class="mb-md-0">
+        <tc-input [placeholder]="'Password'"></tc-input>
+      </tc-form-group>
+    </div>
+    <div class="col-12 col-md-3">
+      <button
+        tc-button
+        [block]="true"
+        [outline]="true"
+        [view]="'success'"
+        [tcShape]="500"
+        [afterIcon]="'icofont-pixels'"
+      >
+        Send form
+      </button>
+    </div>
+  </div>
+</tc-card>

@@ -1,0 +1,14 @@
+@import '~src/assets/sass/variables';
+
+:host {
+	height: 100%;
+	display: flex;
+	flex: 1;
+	overflow: auto;
+	min-height: $module-rem * 30;
+
+	.map {
+		height: 100%;
+    width: 100%;
+	}
+}

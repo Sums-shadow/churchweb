@@ -1,0 +1,12 @@
+:host {
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin: -5px;
+
+    .tc-btn {
+      margin: 5px;
+    }
+  }
+}

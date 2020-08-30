@@ -1,0 +1,8 @@
+<div class="row">
+  <div class="col-12 col-md-4" *ngFor="let contact of contacts; let i = index; let l = last">
+    <tc-contact
+      [data]="contact"
+      [ngClass]="{ 'mb-0': l, 'mb-md-0': (i + 2) === contacts.length || (i + 3) === contacts.length }"
+    ></tc-contact>
+  </div>
+</div>

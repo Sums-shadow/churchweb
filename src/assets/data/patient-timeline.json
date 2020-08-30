@@ -1,0 +1,60 @@
+[
+  {
+    "sectionLabel": {
+      "text": "Today",
+      "view": "accent"
+    },
+    "sectionData": [
+      {
+        "date": "March 27",
+        "title": "New prescription",
+        "content": "Aenean lacinia bibendum nulla sed consectetur. Nullam id dolor id nibh ultricies vehicula ut id elit.",
+        "iconBg": "#ed5564",
+        "iconColor": "#fff"
+      },
+      {
+        "date": "March 20",
+        "title": "Appointment",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate.",
+        "iconBg": "#64B5F6",
+        "iconColor": "#fff"
+      },
+      {
+        "date": "March 12",
+        "title": "Medication",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur nam nisi veniam.",
+        "iconBg": "#ED6C9C",
+        "iconColor": "#fff"
+      },
+      {
+        "date": "March 7",
+        "title": "Operation",
+        "content": "Aenean lacinia bibendum nulla sed consectetur. Nullam id dolor id nibh ultricies vehicula ut id elit.",
+        "icon": "icofont-injection-syringe",
+        "iconBg": "",
+        "iconColor": ""
+      },
+      {
+        "date": "March 1",
+        "title": "Examination",
+        "content": "Lorem ipsum dolor sit.",
+        "iconBg": "#e9e165",
+        "iconColor": "#000"
+      },
+      {
+        "date": "February 15",
+        "title": "Examination",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur nam nisi veniam.",
+        "iconBg": "#CE8557",
+        "iconColor": "#fff"
+      },
+      {
+        "date": "February 6",
+        "title": "Examination",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur nam nisi veniam.",
+        "iconBg": "#ed5564",
+        "iconColor": "#fff"
+      }
+    ]
+  }
+]

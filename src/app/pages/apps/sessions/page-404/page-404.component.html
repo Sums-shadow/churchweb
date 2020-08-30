@@ -1,0 +1,19 @@
+<div class="w-100 text-center">
+  <div class="display-1 d-flex mb-5 justify-content-center align-items-center">
+    <tc-icon
+      [iconClass]="'icofont-radio-active'"
+      [tcColor]="'rgba(237,85,100,0.5)'"
+      [tcFontSize]="'6rem'"
+      [padding]="0"
+      class="mr-2"
+    ></tc-icon>
+
+    <div class="font-weight-normal text-muted mt-0 mb-0">404</div>
+  </div>
+
+  <h1 class="mb-5" [tcFontSize]="20">Oopps. The page you were looking for doesn't exist.</h1>
+
+  <button tc-button [view]="'accent'" [beforeIcon]="'icofont-home'" [routerLink]="['/vertical/default-dashboard']">
+    Back to home
+  </button>
+</div>

@@ -1,0 +1,117 @@
+<div class="row">
+  <div class="col col-12 col-md-6 mb-4">
+    <form
+      [formGroup]="patientForm"
+      novalidate
+      class="new-doctor-form"
+      (ngSubmit)="saveData(patientForm)"
+      *ngIf="patientInfo"
+    >
+      <tc-form-group>
+        <tc-form-label>Photo</tc-form-label>
+        <input type="file" accept="image/*" (change)="onFileChanged($event)" #fileInput hidden>
+
+        <div class="d-flex align-items-center">
+          <tc-avatar [src]="currentAvatar" [size]="100"></tc-avatar>
+          <button
+            tc-button
+            [type]="'button'"
+            [afterIcon]="'icofont-ui-user'"
+            [view]="'accent'"
+            [outline]="true"
+            (click)="fileInput.click()"
+          >
+            Change photo
+          </button>
+        </div>
+      </tc-form-group>
+
+      <tc-form-group>
+        <tc-form-label>Full name</tc-form-label>
+        <tc-input [placeholder]="'Name'" formControlName="name"></tc-input>
+      </tc-form-group>
+
+      <tc-form-group>
+        <tc-form-label>Id</tc-form-label>
+        <tc-input [placeholder]="'Id'" formControlName="id" [readonly]="true"></tc-input>
+      </tc-form-group>
+
+      <div class="row">
+        <div class="col-12 col-sm-6">
+          <tc-form-group>
+            <tc-form-label>Age</tc-form-label>
+            <tc-input [placeholder]="'Age'" formControlName="age" [type]="'number'"></tc-input>
+          </tc-form-group>
+        </div>
+
+        <div class="col-12 col-sm-6">
+          <tc-form-group>
+            <tc-form-label>Gender</tc-form-label>
+            <tc-select [placeholder]="'Gender'" formControlName="gender" [options]="gender"></tc-select>
+          </tc-form-group>
+        </div>
+      </div>
+
+      <tc-form-group>
+        <tc-form-label>Phone number</tc-form-label>
+        <tc-input [placeholder]="'Number'" formControlName="number"></tc-input>
+      </tc-form-group>
+
+      <tc-form-group>
+        <tc-form-label>Address</tc-form-label>
+        <tc-textarea [placeholder]="'Address'" formControlName="address"></tc-textarea>
+      </tc-form-group>
+
+      <tc-form-group>
+        <tc-form-label>Last visit</tc-form-label>
+        <tc-input [placeholder]="'Last visit'" formControlName="lastVisit" [readonly]="true"></tc-input>
+      </tc-form-group>
+
+      <tc-form-group>
+        <tc-form-label>Status</tc-form-label>
+        <tc-select [placeholder]="'Status'" formControlName="status" [options]="status"></tc-select>
+      </tc-form-group>
+
+      <button tc-button [view]="'success'" [block]="true" [disabled]="!changes || patientForm.invalid">
+        Save changes
+      </button>
+    </form>
+  </div>
+
+  <div class="col col-12 col-md-6 mb-4">
+    <tc-v-timeline [data]="patientTimeline" [showIcons]="false" [align]="'left'"></tc-v-timeline>
+  </div>
+</div>
+
+<tc-card [title]="'Billings'" class="mb-0 mt-4">
+  <tc-table [rows]="billings" [hovered]="true" [headerBgColor]="'#336cfb'" [headerColor]="'#fff'">
+    <tc-table-col [columnTitle]="'Bill NO'" [columnName]="'billNo'" [enableSorting]="true">
+      <ng-template #tableTDTemplate let-value>
+        <span [tcColor]="'#a5a5a5'">{{ value }}</span>
+      </ng-template>
+    </tc-table-col>
+    <tc-table-col [columnTitle]="'Patient'" [columnName]="'patient'" [enableSorting]="true">
+      <ng-template #tableTDTemplate let-value>
+        <strong>{{ value }}</strong>
+      </ng-template>
+    </tc-table-col>
+    <tc-table-col [columnTitle]="'Doctor'" [columnName]="'doctor'" [enableSorting]="true">
+      <ng-template #tableTDTemplate let-value>
+        <strong>{{ value }}</strong>
+      </ng-template>
+    </tc-table-col>
+    <tc-table-col [columnTitle]="'Date'" [columnName]="'billDate'" [enableSorting]="true">
+      <ng-template #tableTDTemplate let-value>
+        <span class="nowrap" [tcColor]="'#a5a5a5'">{{ value }}</span>
+      </ng-template>
+    </tc-table-col>
+    <tc-table-col [columnTitle]="'Charges'" [columnName]="'charges'" [enableSorting]="true"></tc-table-col>
+    <tc-table-col [columnTitle]="'Tax'" [columnName]="'tax'" [enableSorting]="true"></tc-table-col>
+    <tc-table-col [columnTitle]="'Discount'" [columnName]="'discount'" [enableSorting]="true"></tc-table-col>
+    <tc-table-col [columnTitle]="'Total'" [columnName]="'total'" [enableSorting]="true">
+      <ng-template #tableTDTemplate let-value>
+        <strong>{{ value }}</strong>
+      </ng-template>
+    </tc-table-col>
+  </tc-table>
+</tc-card>

@@ -1,0 +1,30 @@
+[
+  {
+    "label": "Europe",
+    "value": "europe"
+  },
+	{
+		"label" : "Africa",
+		"value" : "africa"
+	},
+	{
+		"label": "Asia",
+		"value": "asia"
+	},
+	{
+		"label": "North America",
+		"value": "northAmerica"
+	},
+	{
+		"label": "South America",
+		"value": "southAmerica"
+	},
+	{
+		"label": "Australia",
+		"value": "australia"
+	},
+	{
+		"label": "Antarctica",
+		"value": "antarctica"
+	}
+]

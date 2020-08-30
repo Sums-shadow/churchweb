@@ -1,0 +1,22 @@
+:host {
+  .buttons-list {
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    margin: -5px;
+
+    .tc-btn {
+      margin: 5px;
+    }
+  }
+  .badges-list {
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    margin: -5px;
+
+    .tc-badge {
+      margin: 5px;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "title": "",
+    "groupTitle": true
+  },
+  {
+    "title": "Accueil",
+    "icon": {
+      "class": "icofont-thermometer-alt"
+    },
+    "routing": "default-dashboard"
+  },
+  {
+    "title": "Mes cours",
+    "icon": {
+      "class": "icofont-stethoscope-alt"
+    },
+    "routing": "appointments"
+  },
+  {
+    "title": "Mon atelier",
+    "icon": {
+      "class": "icofont-doctor"
+    },
+    "routing": "doctors"
+  },
+  {
+    "title": "Mes examens",
+    "icon": {
+      "class": "icofont-nurse"
+    },
+    "routing": "departments"
+  },
+  {
+    "title": "Mes certificats",
+    "icon": {
+      "class": "icofont-paralysis-disability"
+    },
+    "routing": "patients"
+  }
+  
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "billNo": "132",
+    "billDate": "18 Feb 2019",
+    "patient": "Priya Patel",
+    "doctor": "Juan Freeman",
+    "charges": "155$",
+    "tax": "10%",
+    "discount": "5$",
+    "total": "160$"
+  },
+  {
+    "billNo": "131",
+    "billDate": "17 Feb 2019",
+    "patient": "Mayank Jani",
+    "doctor": "Christina Thomas",
+    "charges": "121$",
+    "tax": "10%",
+    "discount": "5$",
+    "total": "125$"
+  },
+  {
+    "billNo": "130",
+    "billDate": "17 Feb 2019",
+    "patient": "Jenish Shah",
+    "doctor": "Juan Freeman",
+    "charges": "70$",
+    "tax": "10%",
+    "discount": "5$",
+    "total": "75$"
+  },
+  {
+    "billNo": "129",
+    "billDate": "16 Feb 2019",
+    "patient": "Jayna Sharma",
+    "doctor": "Jessica Patterson",
+    "charges": "45$",
+    "tax": "10%",
+    "discount": "5$",
+    "total": "48$"
+  },
+  {
+    "billNo": "128",
+    "billDate": "15 Feb 2019",
+    "patient": "Sonali Malik",
+    "doctor": "Lori Perkins",
+    "charges": "120$",
+    "tax": "10%",
+    "discount": "5$",
+    "total": "124$"
+  },
+  {
+    "billNo": "132",
+    "billDate": "13 Feb 2019",
+    "patient": "Mayank Jani",
+    "doctor": "Jessica Patterson",
+    "charges": "25$",
+    "tax": "10%",
+    "discount": "5$",
+    "total": "27$"
+  },
+  {
+    "billNo": "132",
+    "billDate": "13 Feb 2019",
+    "patient": "Pooja Patel",
+    "doctor": "Juan Freeman",
+    "charges": "320$",
+    "tax": "10%",
+    "discount": "5$",
+    "total": "340$"
+  }
+]

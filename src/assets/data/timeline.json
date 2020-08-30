@@ -1,0 +1,50 @@
+[
+  {
+    "sectionLabel": {
+      "text": "Events",
+      "view": "error"
+    },
+    "sectionData": [
+      {
+        "date": "2m ago",
+        "title": "Appointment",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate.",
+        "icon": "icofont-doctor-alt",
+        "iconBg": "#64B5F6",
+        "iconColor": "#fff"
+      },
+      {
+        "date": "2h ago",
+        "title": "Medication",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur nam nisi veniam.",
+        "icon": "icofont-drug",
+        "iconBg": "#ED6C9C",
+        "iconColor": "#fff"
+      }
+    ]
+  },
+  {
+    "sectionLabel": {
+      "text": "Meetings",
+      "view": "success"
+    },
+    "sectionData": [
+      {
+        "date": "Jul 10",
+        "title": "New patient",
+        "content": "Lorem ipsum dolor sit.",
+        "icon": "icofont-paralysis-disability",
+        "iconBg": "#e9e165",
+        "iconColor": "#000"
+      },
+      {
+        "date": "Jul 10",
+        "title": "Examination",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur nam nisi veniam.",
+        "icon": "icofont-stethoscope-alt",
+        "iconBg": "#CE8557",
+        "iconColor": ""
+      }
+    ]
+  }
+]
